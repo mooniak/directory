@@ -1,0 +1,6 @@
+commitlint.config.js
+**/.eslintrc.js
+node_modules/
+.next
+**/*.graphql
+src/modules/shared/gql
