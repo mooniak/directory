@@ -33,22 +33,6 @@ export function FontRowView() {
       site: "Libre Font",
       fontFamily: '"Stick No Bills", sans-serif',
     },
-    {
-      fontName: "යාල්දේවි",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Stick No Bills", sans-serif',
-    },
-    {
-      fontName: "Stick No Bills",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Stick No Bills", sans-serif',
-    },
   ];
 
   const [showSeparators, setShowSeparators] = useState(
@@ -76,18 +60,20 @@ export function FontRowView() {
           }}
         >
           <div>
-            <div className="grid lg2:grid-cols-4 grid-cols-2 items-center lg2:gap-x-40  lg2:pt-20 pt-5">
+            <div className="grid lg2:grid-cols-6 grid-cols-2 items-center w-fulll lg2:pt-10 pt-5">
               <div
                 className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-3  duration-500" : "translate-y-3  duration-500"} `}
               >
-                <div className="grid grid-cols-2  grid-rows-4 ">
-                  <div className="col-span-2 h-10">
-                    <span className="font-bold sm2:text-base2 text-50px">
-                      {" "}
+                <div className="grid grid-cols-2  grid-rows-4 lg2:w-[270px] xl2:w-[366px]">
+                  <div className="col-span-2 h-10 mb-4">
+                    <span className="font-bold sm2:text-base2 text-50px 2-at ">
                       {font.fontName}
-                    </span>{" "}
+                    </span>
                     <br />
-                    <span className="text-muted"> {font.version}</span>
+                    <span className="text-gray-500 text-sm">
+                      {" "}
+                      {font.version}
+                    </span>
                   </div>
                   <div className="col-span-1 h-10">
                     {font.lang}
@@ -104,10 +90,7 @@ export function FontRowView() {
               </div>
 
               <div
-                className={`lg2:col-start-2 lg2:col-end-5 l col-start-1 text-start col-span-2  ${showSeparators[index] ? "lg2:-translate-y-2  duration-500" : "lg2:translate-y-2  duration-500"}`}
-                style={{
-                  fontSize: "2vw",
-                }}
+                className={`lg2:col-start-3 lg2:text-160px text-50px  lg2:col-end-7 l col-start-1 text-start col-span-2 ${showSeparators[index] ? "lg2:-translate-y-2 duration-500" : "lg2:translate-y-2 duration-500"}`}
               >
                 {font.fontName}
               </div>
@@ -128,20 +111,17 @@ export function FontRowView() {
             <div>
               <Separator />
 
-              <div className="grid grid-cols-8 mt-[20px] pb-[50px] gap-5">
-                <Button
-                  className={`${buttonClass} col-start-1`}
-                  variant="ghost"
-                >
-                  Get the Font
-                </Button>
-                <Button
-                  className={`${buttonClass} col-start-2`}
-                  variant="ghost"
-                >
-                  Get the Font
-                </Button>
-                <div className="col-start-4 flex items-center gap-4">
+              <div className="flex mt-[20px] pb-[30px] gap-5">
+                <div className="gap-5 flex">
+                  <Button className={`${buttonClass} `} variant="ghost">
+                    Get the Font
+                  </Button>
+                  <Button className={`${buttonClass} `} variant="ghost">
+                    Get the Font
+                  </Button>
+                </div>
+
+                <div className="flex  items-center gap-2 ml-[150px] ">
                   <ArrowRight />
                   <Button className={`${buttonClass}  `} variant="ghost">
                     Test & See More

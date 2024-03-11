@@ -33,7 +33,8 @@ const config = {
       hd: "1.75rem",
       "30px": "1.875rem",
       "50px": "3.125rem",
-      hd2: "2.25rem",
+      "160px": "5.7rem",
+      "4xl": "2.25rem",
       hd3: "3.75rem",
       xxl: "6rem",
       hd4: "10rem",
@@ -41,7 +42,7 @@ const config = {
       xxl2: "21.875rem",
       "321px": "20.075rem",
       xxl3: "26.75rem",
-      "13vw": "17vw",
+      "13vw": "13vw",
     },
     fontFamily: {
       "space-grotesk": ["sans-serif"],
