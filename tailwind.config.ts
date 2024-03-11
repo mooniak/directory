@@ -10,20 +10,75 @@ const config = {
   ],
   prefix: "",
   theme: {
+    screens: {
+      xxl: "1921px",
+      xl2: "1601px",
+      lg2: "993px",
+      sm2: "481px",
+    },
     container: {
       center: true,
-      padding: "2rem",
+      padding: "1rem",
       screens: {
         "2xl": "1400px",
       },
     },
+    fontSize: {
+      sm: "0.8rem",
+      sm2: "0.938rem",
+      base: "1rem",
+      base2: "1.125rem",
+      xl: "1.25rem",
+      xl1: "1.5rem",
+      hd: "1.75rem",
+      "30px": "1.875rem",
+      "50px": "3.125rem",
+      hd2: "2.25rem",
+      hd3: "3.75rem",
+      xxl: "6rem",
+      hd4: "10rem",
+      xxl1: "13.75rem",
+      xxl2: "21.875rem",
+      "321px": "20.075rem",
+      xxl3: "26.75rem",
+      "13vw": "17vw",
+    },
+    fontFamily: {
+      "space-grotesk": ["sans-serif"],
+    },
     extend: {
+      lineHeight: {
+        "extra-loose": "2.5",
+        "12": "3rem",
+        "38": "2.375rem",
+      },
       gridTemplateColumns: {
         // Simple 16 column grid
         16: "repeat(16, minmax(0, 1fr))",
         17: "repeat(17, minmax(0, 1fr))",
+        18: "repeat(18, minmax(0, 1fr))",
 
         // Complex site-specific column configuration
+      },
+      gridColumnStart: {
+        "13": "13",
+        "14": "14",
+        "15": "15",
+        "16": "16",
+        "17": "17",
+        "18": "18",
+        "19": "19",
+        "20": "20",
+      },
+      gridColumnEnd: {
+        "13": "13",
+        "14": "14",
+        "15": "15",
+        "16": "16",
+        "17": "17",
+        "18": "18",
+        "19": "19",
+        "20": "20",
       },
       colors: {
         border: "hsl(var(--border))",
