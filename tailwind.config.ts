@@ -44,6 +44,7 @@ const config = {
       "321px": "20.075rem",
       xxl3: "26.75rem",
       "13vw": "13vw",
+      "15vw": "15vw",
     },
     fontFamily: {
       SpaceGrotesk: ["Space Grotesk", "sans-serif"],

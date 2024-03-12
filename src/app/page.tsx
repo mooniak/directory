@@ -9,14 +9,12 @@ export default function Home() {
     <div>
       <div className="text-center">
         <h1
-          className="font-bold leading-none font-SpaceGrotesk"
-          style={{
-            width: "auto",
-            fontSize: "clamp(14px, 20vw, 330px)",
-          }}
+          className="font-bold leading-none font-SpaceGrotesk  text-center overflow-hidden sm2:ml-[-20px] ml-[-5px] text-13vw"
+          style={{ fontSize: "clamp(14px, 20.5vw, 330px)" }}
         >
           mooniak
         </h1>
+
         <Separator />
         <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center ">
           <div className="hidden md2:block w-full">
