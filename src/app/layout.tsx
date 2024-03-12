@@ -14,7 +14,7 @@ export default function RootLayout({
   return (
     <html suppressHydrationWarning lang="en">
       <body className="flex justify-center">
-        <div className="container w-[90%]">{children}</div>
+        <div className="container">{children}</div>
       </body>
     </html>
   );

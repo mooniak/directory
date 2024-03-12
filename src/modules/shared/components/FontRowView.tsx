@@ -15,7 +15,7 @@ export function FontRowView() {
       lang: "Latin, Sinhala",
       owner: "Pushpananda Ekanayak",
       site: "Libre Font",
-      fontFamily: "Abhaya Libre",
+      fontFamily: "AbhayaLibre",
     },
     {
       fontName: "යාල්දේවි",
@@ -23,7 +23,7 @@ export function FontRowView() {
       lang: "Latin, Sinhala",
       owner: "Pushpananda Ekanayak",
       site: "Libre Font",
-      fontFamily: '"Stick No Bills", sans-serif',
+      fontFamily: '"Yaldevi", sans-serif;',
     },
     {
       fontName: "Stick No Bills",
@@ -31,7 +31,47 @@ export function FontRowView() {
       lang: "Latin, Sinhala",
       owner: "Pushpananda Ekanayak",
       site: "Libre Font",
-      fontFamily: '"Stick No Bills", sans-serif',
+      fontFamily: '"Stick No Bills", "sans-serif"',
+    },
+    {
+      fontName: "Whisper",
+      version: "v1.600 ",
+      lang: "Latin, Sinhala",
+      owner: "Pushpananda Ekanayak",
+      site: "Libre Font",
+      fontFamily: '"Whisper", cursive',
+    },
+    {
+      fontName: "සයලම",
+      version: "v1.600 ",
+      lang: "Latin, Sinhala",
+      owner: "Pushpananda Ekanayak",
+      site: "Libre Font",
+      fontFamily: '"Noto Serif Sinhala", serif;',
+    },
+    {
+      fontName: "Madimi One",
+      version: "v1.600 ",
+      lang: "Latin, Sinhala",
+      owner: "Pushpananda Ekanayak",
+      site: "Libre Font",
+      fontFamily: '"Madimi One", sans-serif;',
+    },
+    {
+      fontName: "Caveat",
+      version: "v1.600 ",
+      lang: "Latin, Sinhala",
+      owner: "Pushpananda Ekanayak",
+      site: "Libre Font",
+      fontFamily: '"Caveat", cursive;',
+    },
+    {
+      fontName: "Mansalva",
+      version: "v1.600 ",
+      lang: "Latin, Sinhala",
+      owner: "Pushpananda Ekanayak",
+      site: "Libre Font",
+      fontFamily: '"Mansalva", sans-serif;',
     },
   ];
 
@@ -62,35 +102,40 @@ export function FontRowView() {
           <div>
             <div className="grid lg2:grid-cols-6 grid-cols-2 items-center w-fulll lg2:pt-10 pt-5">
               <div
-                className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-3  duration-500" : "translate-y-3  duration-500"} `}
+                className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-2  duration-500" : "translate-y-2  duration-500"} `}
               >
                 <div className="grid grid-cols-2  grid-rows-4 lg2:w-[270px] xl2:w-[366px]">
-                  <div className="col-span-2 h-10 mb-4">
-                    <span className="font-bold sm2:text-base2 text-50px 2-at ">
+                  <div className="col-span-2  h-10">
+                    <span className="font-bold sm2:text-18px text-50px ">
                       {font.fontName}
                     </span>
                     <br />
                     <span className="text-gray-500 text-sm">
-                      {" "}
                       {font.version}
+                      <Separator />
                     </span>
                   </div>
-                  <div className="col-span-1 h-10">
+                  <div className="col-span-1 mt-3">
                     {font.lang}
                     <Separator />
                   </div>
-                  <div className="col-span-1 h-10">
-                    2 Styles <Separator />
+                  <div className="col-span-1 h-6 mt-3">
+                    2 Styles
+                    <Separator />
                   </div>
-                  <div className="col-span-2 h-10 ">
+                  <div className="col-span-2 mt-0.5">
                     {font.owner} <Separator />
                   </div>
-                  <div className="col-span-2 h-10">{font.site}</div>
+                  <div className="col-span-2 mt-[-5px]">{font.site}</div>
                 </div>
               </div>
 
               <div
-                className={`lg2:col-start-3 lg2:text-160px text-50px  lg2:col-end-7 l col-start-1 text-start col-span-2 ${showSeparators[index] ? "lg2:-translate-y-2 duration-500" : "lg2:translate-y-2 duration-500"}`}
+                className={`lg2:col-start-3  lg2:col-end-7 l col-start-1 text-start col-span-2 ${showSeparators[index] ? "lg2:-translate-y-2 duration-500" : "lg2:translate-y-2 duration-500"}`}
+                style={{
+                  fontFamily: font.fontFamily || "inherit",
+                  fontSize: "clamp(50px, 6.763vw, 125px)",
+                }}
               >
                 {font.fontName}
               </div>

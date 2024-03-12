@@ -14,11 +14,12 @@ const config = {
       xxl: "1921px",
       xl2: "1601px",
       lg2: "993px",
+      md2: "806px",
       sm2: "481px",
     },
     container: {
       center: true,
-      padding: "1rem",
+      padding: "2rem",
       screens: {
         "2xl": "1400px",
       },
@@ -27,10 +28,10 @@ const config = {
       sm: "0.8rem",
       sm2: "0.938rem",
       base: "1rem",
-      base2: "1.125rem",
+      "18px": "1.125rem",
       xl: "1.25rem",
-      xl1: "1.5rem",
-      hd: "1.75rem",
+      "20px": "1.25rem",
+      "28px": "1.75rem",
       "30px": "1.875rem",
       "50px": "3.125rem",
       "160px": "5.7rem",
@@ -45,7 +46,7 @@ const config = {
       "13vw": "13vw",
     },
     fontFamily: {
-      "space-grotesk": ["sans-serif"],
+      SpaceGrotesk: ["Space Grotesk", "sans-serif"],
     },
     extend: {
       lineHeight: {

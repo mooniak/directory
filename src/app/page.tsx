@@ -7,28 +7,34 @@ import { HomeSvg } from "@modules/shared/components/HomeSvg";
 export default function Home() {
   return (
     <div>
-      <div className="text-center ">
-        <div className="">
-          <h1 className="font-bold text-13vw xxl:text-321px leading-none">
-            mooniak
-          </h1>
-        </div>
+      <div className="text-center">
+        <h1
+          className="font-bold leading-none font-SpaceGrotesk"
+          style={{
+            width: "auto",
+            fontSize: "clamp(14px, 20vw, 330px)",
+          }}
+        >
+          mooniak
+        </h1>
         <Separator />
-        <div className="grid sm2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center ">
-          <div className="hidden sm2:block w-full">
+        <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center ">
+          <div className="hidden md2:block w-full">
             <HomeSvg className="w-suto h-auto mr-[30px]" />
           </div>
           <div className="text-left w-[100%] h-fit ">
-            <span className=" text-xl1">
+            <span className=" text-20px lg2:text-28px">
               We are the global leader in Sinhala typography, advancing Lankan
               visual identity with multilingual fonts and design that respect
-              culture and freedom
+              culture and freedom.
             </span>
             <br />
             <div className=" hidden sm2:block">
-              <span className="flex items-center xl2:text-xl1  cursor-pointer hover:underline">
-                About us &nbsp;
-                <ArrowRight />
+              <span className=" text-20px lg2:text-28px cursor-pointer hover:underline  hidden xl2:block">
+                <span className="flex items-center">
+                  About us &nbsp;
+                  <ArrowRight />
+                </span>
               </span>
             </div>
           </div>
@@ -37,8 +43,8 @@ export default function Home() {
         <HomeHeader />
         <Separator />
         <div className="flex pt-10 pb-10 items-center ">
-          <div className="sm2:block flex-1 font-bold text-left text-base2  ">
-            <span className="flex justify-center text-start text-4xl">
+          <div className="sm2:block flex-1 font-bold text-left text-18px  ">
+            <span className="flex sm2:justify-center text-start sm2:text-4xl text-18px">
               Discover <br className="hide sm2:block" /> Fonts
             </span>
           </div>
