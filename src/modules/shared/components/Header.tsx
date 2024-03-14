@@ -1,11 +1,12 @@
-import { ArrowLeft, Facebook, Github, Instagram } from "lucide-react";
+"use client";
+import { ArrowLeft } from "lucide-react";
 import { Button } from "@modules/shared/components/ui/button";
 import { useRouter } from "next/navigation";
-import { Separator } from "@modules/shared/components/ui/separator";
+import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
+import Link from "next/link";
 
 export function Header() {
   const navButtonClassName = "cursor-pointer hover:underline ";
-  const iconClassName = "w-[19.81px] h-[19.81px]";
   const router = useRouter();
 
   return (
@@ -31,24 +32,26 @@ export function Header() {
         </div>
         <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
           <div className="lg2:gap-[40px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
-            <span className={navButtonClassName}>Fonts</span>
-            <span className={navButtonClassName}>About</span>
-            <span className={navButtonClassName}>Tools</span>
-            <span className={navButtonClassName}>Community</span>
-            <span className={navButtonClassName}>Contact</span>
+            <Link className={navButtonClassName} href="/">
+              Fonts
+            </Link>
+            <Link className={navButtonClassName} href="/about/">
+              About
+            </Link>
+            <Link className={navButtonClassName} href="/">
+              Tools
+            </Link>
+            <Link className={navButtonClassName} href="/">
+              Community
+            </Link>
+            <Link href="/contact/" className={navButtonClassName}>
+              Contact
+            </Link>
           </div>
         </div>
         <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center hidden w-full lg2:block sm2:w-auto">
           <div className="flex items-center gap-1 justify-end pt-3">
-            <div className="rounded-full p-2 hover:bg-muted">
-              <Instagram color="#000000" className={iconClassName} />
-            </div>
-            <div className="rounded-full p-2 hover:bg-muted">
-              <Github color="#000000" className={iconClassName} />
-            </div>
-            <div className="rounded-full p-2 hover:bg-muted">
-              <Facebook color="#000000" className={iconClassName} />
-            </div>
+            <SocialMediaIcon />
           </div>
         </div>
       </div>
