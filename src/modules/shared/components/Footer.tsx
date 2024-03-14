@@ -5,7 +5,7 @@ export function Footer() {
   const iconClassName = "w-[19.81px] h-[19.81px]";
   return (
     <div>
-      <div className="text-hd3 pb-10">෴</div>
+      <div className="text-hd3 pb-10 text-center font-AbhayaLibre">෴</div>
       <Separator />
       <div className="grid lg2:grid-rows-3 grid-rows-4 lg2:grid-cols-12 pt-5 grid-cols-8">
         <div className="lg2:col-start-1 lg2:col-end-5 row-start-1 lg2:row-start-2 text-3xl pt-2 font-bold text-start col-start-1 col-end-2 text-30px font-SpaceGrotesk">

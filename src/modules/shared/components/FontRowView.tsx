@@ -3,6 +3,7 @@ import { Separator } from "@modules/shared/components/ui/separator";
 import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { ArrowRight } from "lucide-react";
+import { useRouter } from "next/navigation";
 
 export function FontRowView() {
   const buttonClass =
@@ -79,6 +80,8 @@ export function FontRowView() {
     Array(data.length).fill(false),
   );
 
+  const router = useRouter();
+
   return (
     <div>
       {data.map((font, index) => (
@@ -146,7 +149,15 @@ export function FontRowView() {
                 <Separator orientation="vertical" className="h-4" />
                 <span>2 Styles </span>
               </div>
-              <Button variant="link">tap to see more</Button>
+              a
+              <Button
+                variant="link"
+                onClick={() => {
+                  router.push(`/fonts/${font.fontName}/`);
+                }}
+              >
+                tap to see more
+              </Button>
             </div>
           </div>
 
@@ -162,13 +173,19 @@ export function FontRowView() {
                     Get the Font
                   </Button>
                   <Button className={`${buttonClass} `} variant="ghost">
-                    Get the Font
+                    Dev Version
                   </Button>
                 </div>
 
                 <div className="flex  items-center gap-2 ml-[150px] ">
                   <ArrowRight />
-                  <Button className={`${buttonClass}  `} variant="ghost">
+                  <Button
+                    className={`${buttonClass}  `}
+                    variant="ghost"
+                    onClick={() => {
+                      router.push(`/fonts/${font.fontName}/`);
+                    }}
+                  >
                     Test & See More
                   </Button>
                 </div>

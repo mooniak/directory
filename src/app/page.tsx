@@ -1,4 +1,4 @@
-import { Separator } from "@app/modules/shared/components/ui/separator";
+import { Separator } from "@modules/shared/components/ui/separator";
 import { HomeHeader } from "@modules/shared/components/HomeHeader";
 import { ArrowRight, MoveDown } from "lucide-react";
 import { FontRowView } from "@modules/shared/components/FontRowView";
@@ -42,7 +42,7 @@ export default function Home() {
         <Separator />
         <div className="flex pt-10 pb-10 items-center ">
           <div className="sm2:block flex-1 font-bold text-left text-18px  ">
-            <span className="flex sm2:justify-center text-start sm2:text-4xl text-18px">
+            <span className="flex sm2:justify-center text-start sm2:text-4xl text-18px leading-[2.723rem]">
               Discover <br className="hide sm2:block" /> Fonts
             </span>
           </div>

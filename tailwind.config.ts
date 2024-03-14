@@ -34,6 +34,7 @@ const config = {
       "28px": "1.75rem",
       "30px": "1.875rem",
       "50px": "3.125rem",
+      "60px": "3.75rem",
       "160px": "5.7rem",
       "4xl": "2.25rem",
       hd3: "3.75rem",
@@ -43,17 +44,22 @@ const config = {
       xxl2: "21.875rem",
       "321px": "20.075rem",
       xxl3: "26.75rem",
+      "200px": "12.5rem",
+      "70px": "4.375rem",
+      "22px": "1.375rem",
       "13vw": "13vw",
       "15vw": "15vw",
     },
     fontFamily: {
       SpaceGrotesk: ["Space Grotesk", "sans-serif"],
+      AbhayaLibre: ["Abhaya Libre", "serif"],
     },
     extend: {
       lineHeight: {
         "extra-loose": "2.5",
         "12": "3rem",
         "38": "2.375rem",
+        "43.57": "2.723rem",
       },
       gridTemplateColumns: {
         // Simple 16 column grid
