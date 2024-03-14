@@ -249,6 +249,34 @@ export default function page() {
         </div>
       </div>
       <Separator />
+      <div className="pt-16">
+        <span className="font-bold text-22px">Glyphs</span>
+        <div className="w-auto pt-16 font-AbhayaLibre lg2:w-[50%]">
+          <span
+            style={{
+              fontSize: "clamp(40px, 3vw, 60px)",
+            }}
+          >
+            A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
+          </span>{" "}
+          <br />
+          <span
+            style={{
+              fontSize: "clamp(40px, 3vw, 60px)",
+            }}
+          >
+            a b c d e f g h i j k l m n o p q r s t u v w x y z
+          </span>
+          <br />
+          <span
+            style={{
+              fontSize: "clamp(40px, 3vw, 60px)",
+            }}
+          >
+            0 1 2 3 4 5 6 7 8 9
+          </span>
+        </div>
+      </div>
       <Footer />
     </div>
   );
