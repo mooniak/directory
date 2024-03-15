@@ -1,15 +1,16 @@
 import { Header } from "@modules/shared/components/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
+import { Footer } from "@modules/shared/components/Footer";
+import { FounderInfo } from "@modules/shared/components/FounderInfo";
 
 export default function Page() {
   return (
     <div>
       <Header />
-      <div className="p-10 grid grid-cols-2">
-        <div>
+      <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10">
+        <div className="pt-5 pb-5 flex justify-center lg:justify-start">
           <svg
-            width="543"
-            height="511"
+            className="lg2:w-[543px] w-[70vw]  "
             viewBox="0 0 543 511"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
@@ -20,7 +21,19 @@ export default function Page() {
             />
           </svg>
         </div>
-        <div className="w-[90%] text-[26px]">
+        <div className="sm2:hidden block pt-5">
+          <Separator />
+        </div>
+        <h2 className="text-[50px] sm2:hidden block pt-10">
+          Mooniak: <br />
+          The Sri Lankan Type Foundry
+        </h2>
+        <div
+          className="lg2:w-[90%]   sm2:text-[20px]"
+          style={{
+            fontSize: "clamp(18px, 2vw, 25px)",
+          }}
+        >
           With a global view and local roots, Mooniak specializes in producing
           multi-script fonts and typography for Lankan audiences in Sinhala,
           Tamil, and English languages. In addition to incubating and releasing
@@ -34,13 +47,19 @@ export default function Page() {
         </div>
       </div>
       <Separator />
-      <div className="grid grid-cols-2 pt-10 pb-10">
-        <div>
-          <span className="font-bold text-start">
-            A Brief History <br />
-            of a Foundry
-          </span>
-          <p>
+      <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10">
+        <div className="">
+          <div className="sm2:pt-20 pt-10 sm2:pb-20 pb-10">
+            <span className=" font-bold text-start text-[26px] xl2:block hidden">
+              A Brief History <br />
+              of a Foundry
+            </span>
+            <span className=" text-start text-[26px] xl2:hidden block">
+              A Brief History
+            </span>
+          </div>
+
+          <p className="text-[20px] lg2:w-[80%] ">
             In its first decade Mooniak was a point of collaboration which
             launched many projects. Mooniak has been operating as a collective
             of creatives focusing on community impact design projects since
@@ -70,9 +89,25 @@ export default function Page() {
             and consulting on a number of international type design projects.
           </p>
         </div>
-        <div />
+        <div className="pt-[1px] max-[1600px]:hidden">
+          <div className="grid grid-rows-2">
+            <div>
+              <img
+                src="/about_book.png"
+                alt="about_book"
+                className="w-[864px] h-[549px]"
+              />
+            </div>
+            <div className="bg-black">
+              <img src="/about_books.png" alt="about_books" className="pt-10" />
+            </div>
+          </div>
+        </div>
       </div>
       <Separator />
+      <h2 className="pt-20 pb-5 text-[36px]">People</h2>
+      <FounderInfo />
+      <Footer inPage />
     </div>
   );
 }
