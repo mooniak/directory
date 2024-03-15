@@ -26,7 +26,7 @@ export function Footer({ inPage }: footerProps) {
           </Link>
           <Link
             className="col-span-1 cursor-pointer hover:underline mt-2"
-            href="/"
+            href="/community"
           >
             Community
           </Link>
