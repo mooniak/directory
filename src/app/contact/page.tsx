@@ -9,9 +9,9 @@ import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 
 export default function Contact() {
   return (
-    <div>
+    <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
-      <div className="grid lg2:grid-cols-2 items-center justify-center sm2:pt-16 pt-10 sm2:pb-16  ">
+      <div className="container grid lg2:grid-cols-2 items-center justify-center sm2:pt-16 pt-10 sm2:pb-16  ">
         <div className="justify-center flex">
           <svg
             className="w-suto h-auto p-5 lg2:w-[478px] lg2:h-[140px]"
@@ -32,8 +32,8 @@ export default function Contact() {
           Get in touch with us.
         </span>
       </div>
-      <Separator />
-      <div className="grid lg2:grid-cols-2 ">
+      <Separator className="container" />
+      <div className="grid lg2:grid-cols-2 lg2:container">
         <div className="flex items-center">
           <div className="w-[100%] pt-20 pb-20 lg2:pr-40">
             <span className="font-bold text-[22px]">
@@ -71,7 +71,7 @@ export default function Contact() {
             className="h-full hidden lg2:block"
           />
         </div>
-        <Separator className="lg2:hidden block" />
+        <Separator className="lg2:hidden block container p-0" />
 
         <div className="flex lg2:p-20">
           <div className="lg2:w-[60%] w-[100%] lg2:pt-0 pt-10">

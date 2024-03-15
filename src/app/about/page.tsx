@@ -5,9 +5,9 @@ import { FounderInfo } from "@modules/shared/components/FounderInfo";
 
 export default function Page() {
   return (
-    <div>
+    <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
-      <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10">
+      <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10 container">
         <div className="pt-5 pb-5 flex justify-center lg:justify-start">
           <svg
             className="lg2:w-[543px] w-[70vw]  "
@@ -21,7 +21,7 @@ export default function Page() {
             />
           </svg>
         </div>
-        <div className="sm2:hidden block pt-5">
+        <div className="sm2:hidden block pt-5 ">
           <Separator />
         </div>
         <h2 className="text-[50px] sm2:hidden block pt-10">
@@ -47,7 +47,7 @@ export default function Page() {
         </div>
       </div>
       <Separator />
-      <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10">
+      <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10 container">
         <div className="">
           <div className="sm2:pt-20 pt-10 sm2:pb-20 pb-10">
             <span className=" font-bold text-start text-[26px] xl2:block hidden">
@@ -104,8 +104,8 @@ export default function Page() {
           </div>
         </div>
       </div>
-      <Separator />
-      <h2 className="pt-20 pb-5 text-[36px]">People</h2>
+      <Separator className="" />
+      <h2 className="pt-20 pb-5 text-[36px] container">People</h2>
       <FounderInfo />
       <Footer inPage />
     </div>

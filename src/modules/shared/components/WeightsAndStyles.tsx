@@ -7,7 +7,7 @@ type WeightsAndStylesProps = {
 
 export function WeightsAndStyles({ fontWeights }: WeightsAndStylesProps) {
   return (
-    <div className="pt-10">
+    <div className="pt-10 xl2:container">
       <span className="font-bold">Weights & Styles </span>
       {fontWeights?.map((font) => (
         <div key={font.size} className="pt-10">
@@ -43,7 +43,6 @@ export function WeightsAndStyles({ fontWeights }: WeightsAndStylesProps) {
           <Separator className="bg-border" />
         </div>
       ))}
-      <Separator />
     </div>
   );
 }

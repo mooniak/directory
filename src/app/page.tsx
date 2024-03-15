@@ -6,8 +6,8 @@ import { Footer } from "@modules/shared/components/Footer";
 import { HomeSvg } from "@modules/shared/components/HomeSvg";
 export default function Home() {
   return (
-    <div>
-      <div className="text-center">
+    <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
+      <div className="text-center ">
         <h1
           className="font-bold leading-none font-SpaceGrotesk  text-center overflow-hidden sm2:ml-[-20px] ml-[-5px] text-13vw"
           style={{ fontSize: "clamp(14px, 20.5vw, 330px)" }}
@@ -16,7 +16,7 @@ export default function Home() {
         </h1>
 
         <Separator />
-        <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center ">
+        <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center xl2:container">
           <div className="hidden md2:block w-full">
             <HomeSvg className="w-suto h-auto mr-[30px]" />
           </div>
@@ -40,7 +40,7 @@ export default function Home() {
         <Separator />
         <HomeHeader />
         <Separator />
-        <div className="flex pt-10 pb-10 items-center ">
+        <div className="flex pt-10 pb-10 items-center xl2:container">
           <div className="sm2:block flex-1 font-bold text-left text-18px  ">
             <span className="flex sm2:justify-center text-start sm2:text-4xl text-18px leading-[2.723rem]">
               Discover <br className="hide sm2:block" /> Fonts

@@ -41,7 +41,7 @@ export function FounderInfo() {
   return (
     <div>
       {founders.map((founder, index) => (
-        <div key={founder.name}>
+        <div key={founder.name} className="xl2:container">
           <Separator className="bg-border" />
           <div className="grid sm2:grid-cols-2 lg2:grid-cols-4  grid-cols-2 pt-10 sm2:pb-10 gap-5 ">
             <div className="hidden sm2:block">

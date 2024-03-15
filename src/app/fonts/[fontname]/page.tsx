@@ -123,11 +123,11 @@ export default function page() {
     "w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full";
 
   return (
-    <div>
+    <div className="max-xl2:container xl2:pl-10 xl2:pr-10">
       <Header />
       <SingleFontInfo singleFontData={singleFontData} />
       <Separator />
-      <div className="h-full ">
+      <div className="h-full xl2:container">
         <div className=" pt-10 pb-10 hidden md2:block">
           <div className="flex items-center">
             <span className="pr-[170px]">Style : Regular</span>
@@ -200,7 +200,8 @@ export default function page() {
       </div>
       <Separator />
       <WeightsAndStyles fontWeights={fontWeights} />
-      <div className="grid lg2:grid-cols-2 lg2:gap-20 pt-16 pb-16 ">
+      <Separator className="max-xl2:container" />{" "}
+      <div className="grid lg2:grid-cols-2 lg2:gap-20 pt-16 pb-16 xl2:container ">
         <div>
           <div className="pb-16">
             <span className="font-bold text-22px "> Details</span>
@@ -249,7 +250,7 @@ export default function page() {
         </div>
       </div>
       <Separator />
-      <div className="pt-16">
+      <div className="pt-16 xl2:container">
         <span className="font-bold text-22px">Glyphs</span>
         <div className="w-auto pt-16 font-AbhayaLibre lg2:w-[50%]">
           <span

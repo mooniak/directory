@@ -102,7 +102,7 @@ export function FontRowView() {
             });
           }}
         >
-          <div>
+          <div className="xl2:container">
             <div className="grid lg2:grid-cols-6 grid-cols-2 items-center w-fulll lg2:pt-10 pt-5">
               <div
                 className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-2  duration-500" : "translate-y-2  duration-500"} `}
@@ -162,7 +162,7 @@ export function FontRowView() {
           </div>
 
           <div
-            className={`  hidden lg2:block ${showSeparators[index] ? " lg2:transition-opacity duration-700 ease-out opacity-100 " : "lg2:transition-opacity duration-700 ease-out opacity-0"}`}
+            className={` xl2:container hidden lg2:block ${showSeparators[index] ? " lg2:transition-opacity duration-700 ease-out opacity-100 " : "lg2:transition-opacity duration-700 ease-out opacity-0"}`}
           >
             <div>
               <Separator />
