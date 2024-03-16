@@ -149,7 +149,6 @@ export function FontRowView() {
                 <Separator orientation="vertical" className="h-4" />
                 <span>2 Styles </span>
               </div>
-              a
               <Button
                 variant="link"
                 onClick={() => {

@@ -13,8 +13,8 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
   const router = useRouter();
 
   return (
-    <div className="container">
-      <div className="sm2:h-[124px] h-[66px] grid grid-cols-6 items-center tras transition-transform ">
+    <div className="xl2:container">
+      <div className="sm2:h-[124px] h-[66px] grid sm2:grid-cols-6 items-center tras transition-transform ">
         <div className="col-start-1 flex items-center ">
           <div className="flex-1" />
           <div className="justify-center hidden lg2:block">
