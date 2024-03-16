@@ -61,8 +61,6 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
         <div className="lg2:col-start-4 lg2:col-end-5 sm2:col-start-4 sm2:col-end-6 col-start-6 col-end-7 hidden sm2:block pt-8">
           <span className="font-bold text-sm2 ">Designers</span>
           <br />
-          <span>Mooniak</span>
-          <br />
           <span>{singleFontData?.owner}</span>
         </div>
         <div className="lg2:col-start-5 sm2:col-start-6 col-start-4 col-end-7 sm2:pt-8 pt-2">
