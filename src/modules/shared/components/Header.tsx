@@ -1,26 +1,21 @@
 "use client";
 import { ArrowLeft } from "lucide-react";
 import { Button } from "@modules/shared/components/ui/button";
-import { useRouter } from "next/navigation";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
 
 export function Header() {
   const navButtonClassName = "cursor-pointer hover:underline ";
-  const router = useRouter();
 
   return (
     <div className="w-full border-b border-black h-[60px]">
       <div className="grid grid-cols-12 gap-4  h-[42px] items-center">
-        <div
+        <Link
+          href="/"
           className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer"
-          onClick={() => {
-            router.push(`/`);
-            router.refresh();
-          }}
         >
           Mooniak
-        </div>
+        </Link>
 
         <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end pt-3 flex items-center sm2:hidden">
           <Button

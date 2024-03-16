@@ -7,7 +7,7 @@ export default function Page() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
-      <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10 container">
+      <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10 xl2:container">
         <div className="pt-5 pb-5 flex justify-center lg:justify-start">
           <svg
             className="lg2:w-[543px] w-[70vw]  "
@@ -47,7 +47,7 @@ export default function Page() {
         </div>
       </div>
       <Separator />
-      <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10 container">
+      <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10 xl2:container">
         <div className="">
           <div className="sm2:pt-20 pt-10 sm2:pb-20 pb-10">
             <span className=" font-bold text-start text-[26px] xl2:block hidden">

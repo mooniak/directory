@@ -6,7 +6,7 @@ export default function page() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
-      <div className="grid lg2:grid-cols-2 lg2:p-16 pt-10 pb-10 items-center container ">
+      <div className="grid lg2:grid-cols-2 lg2:p-16 pt-10 pb-10 items-center xl2:container ">
         <div>
           <h1
             className="font-bold min-[1273px]:text-[200px] translate-y-2 duration-500 max-[1273px]:text-[150px] max-[992px]:leading-[9rem] max-[430px]:text-[25vw] max-[430px]:leading-[7rem] max-[1273px]:leading-[180px]  min-[1273px]:leading-[200px]"
@@ -39,7 +39,7 @@ export default function page() {
         </div>
       </div>
       <Separator />
-      <div className="lg2:p-10 pt-5 pb-5 container">
+      <div className="lg2:p-10 pt-5 pb-5 xl2:container">
         <span className="font-bold text-[36px]">
           Join the <br />
           Community

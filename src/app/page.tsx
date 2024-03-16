@@ -4,6 +4,7 @@ import { ArrowRight, MoveDown } from "lucide-react";
 import { FontRowView } from "@modules/shared/components/FontRowView";
 import { Footer } from "@modules/shared/components/Footer";
 import { HomeSvg } from "@modules/shared/components/HomeSvg";
+import Link from "next/link";
 export default function Home() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
@@ -29,10 +30,10 @@ export default function Home() {
             <br />
             <div className=" hidden sm2:block">
               <span className=" text-20px lg2:text-28px cursor-pointer hover:underline  hidden xl2:block">
-                <span className="flex items-center">
+                <Link className="flex items-center" href="/about/">
                   About us &nbsp;
                   <ArrowRight />
-                </span>
+                </Link>
               </span>
             </div>
           </div>

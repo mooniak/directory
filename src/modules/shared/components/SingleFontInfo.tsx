@@ -14,7 +14,7 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
 
   return (
     <div className="xl2:container">
-      <div className="sm2:h-[124px] h-[66px] grid sm2:grid-cols-6 items-center tras transition-transform ">
+      <div className="sm2:h-[124px] h-[66px] grid sm2:grid-cols-6  transition-transform ">
         <div className="col-start-1 flex items-center ">
           <div className="flex-1" />
           <div className="justify-center hidden lg2:block">
@@ -58,14 +58,14 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
             </Button>
           </div>
         </div>
-        <div className="lg2:col-start-4 lg2:col-end-5 sm2:col-start-4 sm2:col-end-6 col-start-6 col-end-7 hidden sm2:block ">
+        <div className="lg2:col-start-4 lg2:col-end-5 sm2:col-start-4 sm2:col-end-6 col-start-6 col-end-7 hidden sm2:block pt-8">
           <span className="font-bold text-sm2 ">Designers</span>
           <br />
           <span>Mooniak</span>
           <br />
           <span>{singleFontData?.owner}</span>
         </div>
-        <div className="lg2:col-start-5 sm2:col-start-6 col-start-4 col-end-7 ">
+        <div className="lg2:col-start-5 sm2:col-start-6 col-start-4 col-end-7 sm2:pt-8">
           <span className="font-bold text-sm2">Scripts</span>
           <br />
           <span>{singleFontData?.lang}</span>
