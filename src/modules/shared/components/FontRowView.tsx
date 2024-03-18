@@ -192,7 +192,7 @@ export function FontRowView() {
             </div>
           </div>
           <Separator
-            className={`${showSeparators[index] ? "lg2:translate-y-5 duration-500" : "lg2:-translate-y-5  duration-500"}`}
+            className={`${showSeparators[index] ? "lg2:translate-y-5 duration-500" : "lg2:-translate-y-5  duration-500"} xl2:bg-border sm2:bg-black`}
           />
         </div>
       ))}

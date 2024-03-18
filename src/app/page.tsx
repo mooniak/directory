@@ -16,7 +16,7 @@ export default function Home() {
           mooniak
         </h1>
 
-        <Separator />
+        <Separator className="xl2:bg-border sm2:bg-black" />
         <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center xl2:container">
           <div className="hidden md2:block w-full">
             <HomeSvg className="w-suto h-auto mr-[30px]" />
@@ -38,9 +38,9 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Separator />
+        <Separator className="xl2:bg-border sm2:bg-black" />
         <HomeHeader />
-        <Separator />
+        <Separator className="xl2:bg-border sm2:bg-black" />
         <div className="flex pt-10 pb-10 items-center xl2:container">
           <div className="sm2:block flex-1 font-bold text-left text-18px  ">
             <span className="flex sm2:justify-center text-start sm2:text-4xl text-18px leading-[2.723rem]">
@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Separator />
+        <Separator className="xl2:bg-border sm2:bg-black" />
         <FontRowView />
         <Footer />
       </div>
