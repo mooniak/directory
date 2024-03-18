@@ -10,6 +10,13 @@ import { useParams } from "next/navigation";
 import { WeightsAndStyles } from "@modules/shared/components/WeightsAndStyles";
 import { Footer } from "@modules/shared/components/Footer";
 import { Input } from "@app/modules/shared/components/ui/input";
+import {
+  Select,
+  SelectContent,
+  SelectItem,
+  SelectTrigger,
+  SelectValue,
+} from "@modules/shared/components/ui/select";
 
 const data = [
   {
@@ -110,10 +117,11 @@ const fontWeights = [
     name: "bold",
   },
 ];
-export default function page() {
+export default function Page() {
   const { fontname } = useParams();
   const decodedFontName = decodeURIComponent(String(fontname));
   const [isShowSlider, setIsShowSlider] = useState(false);
+  const [value, setValue] = useState("200");
   const [isFontSize, setIsFontSize] = useState(200);
   const singleFontData = data.find((font) => font.fontName === decodedFontName);
   const [isInputName, setIsInputName] = useState<string | undefined>(
@@ -130,7 +138,28 @@ export default function page() {
       <div className="h-full xl2:container">
         <div className=" pt-10 pb-10 hidden md2:block">
           <div className="flex items-center">
-            <span className="pr-[170px]">Style : Regular</span>
+            <span className="pr-[170px] flex items-center">
+              Style :
+              <div className="pl-2">
+                <Select
+                  onValueChange={(value) => {
+                    setValue(value);
+                  }}
+                >
+                  <SelectTrigger className="w-[170px]">
+                    <SelectValue placeholder="Font Weight" />
+                  </SelectTrigger>
+                  <SelectContent>
+                    <SelectItem value="300">Light</SelectItem>
+                    <SelectItem value="400">Regular</SelectItem>
+                    <SelectItem value="500"> Medium</SelectItem>
+                    <SelectItem value="600"> SemiBold</SelectItem>
+                    <SelectItem value="700"> Bold </SelectItem>
+                    <SelectItem value="800"> ExtraBold</SelectItem>
+                  </SelectContent>
+                </Select>
+              </div>
+            </span>
             <Button
               variant="ghost"
               onClick={() => {
@@ -160,6 +189,7 @@ export default function page() {
         <span
           className="font-normal pt-10 hidden md2:block"
           style={{
+            fontWeight: value,
             fontSize: isFontSize,
             fontFamily: singleFontData?.fontFamily || "inherit",
           }}
@@ -259,7 +289,7 @@ export default function page() {
             }}
           >
             A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-          </span>{" "}
+          </span>
           <br />
           <span
             style={{
