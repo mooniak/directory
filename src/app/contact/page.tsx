@@ -78,8 +78,8 @@ export default function Contact() {
               Get
               <br /> in touch
             </span>
-            <div className="space-y-5 pt-10">
-              <Separator className="bg-border" />{" "}
+            <div className="space-y-2 pt-10">
+              <Separator className="bg-border" />
               <div className="flex items-center gap-10">
                 <span className="text-sm">Whatsapp </span>
                 <Link
@@ -90,7 +90,7 @@ export default function Contact() {
                 </Link>
               </div>
               <Separator className="bg-border" />
-              <div className="flex items-center pt-2 gap-10">
+              <div className="flex items-center gap-10">
                 <span className="text-sm">Email </span>
                 <Link
                   className="text-sm font-bold pl-7"
@@ -99,7 +99,7 @@ export default function Contact() {
                   hello@mooniak.com
                 </Link>
               </div>
-              <Separator className="bg-border" />{" "}
+              <Separator className="bg-border" />
               <div className="lg2:pt-1 pb-16">
                 <SocialMediaIcon />
               </div>

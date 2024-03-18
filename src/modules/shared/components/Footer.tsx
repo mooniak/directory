@@ -1,11 +1,15 @@
+"use client";
 import { Separator } from "@modules/shared/components/ui/separator";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
+import { useRouter } from "next/navigation";
 
 type footerProps = {
   readonly inPage?: boolean;
 };
 export function Footer({ inPage }: footerProps) {
+  const router = useRouter();
+
   return (
     <div>
       {!inPage && (
@@ -21,12 +25,14 @@ export function Footer({ inPage }: footerProps) {
         </Link>
 
         <div className="row-span-3 grid grid-rows-3 md:grid-cols-6  h-20 pt-2 md:col-start-7 md:col-end-9 xl2:col-start-7 xl2:col-end-7 lg2:col-start-7 gap-4 lg2:col-end-9 sm2:col-start-5 sm2:col-end-7  grid-cols-6 col-start-6 col-end-9 text-start font-bold text-sm">
-          <Link
+          <div
             className="col-span-1 md:col-start-1  col-start-1 col-end-3  cursor-pointer hover:underline mt-2"
-            href="/"
+            onClick={() => {
+              router.replace(`/#ontRowView`);
+            }}
           >
             Fonts
-          </Link>
+          </div>
           <Link
             className="col-span-1 cursor-pointer hover:underline mt-2"
             href="/community"

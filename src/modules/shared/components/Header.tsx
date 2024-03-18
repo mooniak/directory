@@ -5,10 +5,12 @@ import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
 import { useState } from "react";
 import { Sidebar } from "@modules/shared/components/Sidebar";
+import { useRouter } from "next/navigation";
 
 export function Header() {
   const navButtonClassName = "cursor-pointer hover:underline ";
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+  const router = useRouter();
 
   return (
     <div className="w-full border-b border-black h-[60px]">
@@ -38,9 +40,14 @@ export function Header() {
 
         <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
           <div className="lg2:gap-[40px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
-            <Link className={navButtonClassName} href="/">
+            <div
+              className={navButtonClassName}
+              onClick={() => {
+                router.replace(`/#ontRowView`);
+              }}
+            >
               Fonts
-            </Link>
+            </div>
             <Link className={navButtonClassName} href="/about/">
               About
             </Link>

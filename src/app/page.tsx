@@ -56,7 +56,7 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <Separator className="xl2:bg-border sm2:bg-black" />
+        <Separator className="xl2:bg-border sm2:bg-black" id="ontRowView" />
         <FontRowView />
         <Footer />
       </div>

@@ -89,7 +89,7 @@ const fontWeights = [
   {
     className: "extralight",
     size: "200",
-    name: "extralight",
+    name: "Extra light",
   },
   {
     className: "light",
@@ -99,29 +99,29 @@ const fontWeights = [
   {
     className: "normal",
     size: "400",
-    name: "normal",
+    name: "Normal",
   },
   {
     className: "font-medium",
     size: "500",
-    name: "medium",
+    name: "Medium",
   },
   {
     className: "semibold",
     size: "600",
-    name: "semibold",
+    name: "Semibold",
   },
   {
     className: "bold",
     size: "700",
-    name: "bold",
+    name: "Bold",
   },
 ];
 export default function Page() {
   const { fontname } = useParams();
   const decodedFontName = decodeURIComponent(String(fontname));
   const [isShowSlider, setIsShowSlider] = useState(false);
-  const [value, setValue] = useState("200");
+  const [value, setValue] = useState("400");
   const [isFontSize, setIsFontSize] = useState(200);
   const singleFontData = data.find((font) => font.fontName === decodedFontName);
   const [isInputName, setIsInputName] = useState<string | undefined>(
@@ -171,7 +171,7 @@ export default function Page() {
             <div className="w-[290px] pl-5">
               {isShowSlider && (
                 <Slider
-                  defaultValue={[190]}
+                  defaultValue={[isFontSize ?? 200]}
                   max={200}
                   min={40}
                   step={1}
@@ -208,9 +208,6 @@ export default function Page() {
             }) => {
               setIsInputName(event.target.value as string);
             }}
-            onBlur={() => {
-              setIsInputName(singleFontData?.fontName);
-            }}
           />
         </span>
         <span
@@ -229,40 +226,49 @@ export default function Page() {
         </Button>
       </div>
       <Separator />
-      <WeightsAndStyles fontWeights={fontWeights} />
+      <WeightsAndStyles
+        fontWeights={fontWeights}
+        fontFamily={singleFontData?.fontFamily || "inherit"}
+        isInputName={isInputName}
+        fontName={singleFontData?.fontName}
+      />
       <Separator className="max-xl2:container" />{" "}
       <div className="grid lg2:grid-cols-2 lg2:gap-20 pt-16 pb-16 xl2:container ">
         <div>
-          <div className="pb-16">
-            <span className="font-bold text-22px "> Details</span>
+          <div className="sm2:pb-16 pb-2">
+            <span className="font-bold text-22px ">Details </span>
           </div>
-          <Separator />
+          <Separator className="sm2:block hidden" />
           <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">Font Name</span>
+            <span className="font-bold">Font Name &nbsp;&nbsp;</span>
             <span>{singleFontData?.fontName}</span>
           </div>
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">Designers</span>
+            <span className="font-bold">Designers &nbsp;&nbsp;&nbsp;</span>
             <span>{singleFontData?.owner}</span>
           </div>
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">Scripts</span>
+            <span className="font-bold">
+              Scripts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
+            </span>
             <span>{singleFontData?.lang}</span>
           </div>
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">License</span>
+            <span className="font-bold">
+              License &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            </span>
             <span>OFL</span>
           </div>
           <Separator />
         </div>
         <div>
-          <div className="pb-16">
+          <div className="pb-16 lg2:pt-0 pt-10">
             <span className="font-bold text-22px "> About</span>
           </div>
           <p className="w-[90%] text-20px">
