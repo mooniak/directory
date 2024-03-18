@@ -2,7 +2,7 @@ import { Header } from "@modules/shared/components/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
 import { Footer } from "@modules/shared/components/Footer";
 
-export default function page() {
+export default function Community() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
