@@ -131,7 +131,7 @@ export default function Page() {
     "w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full";
 
   return (
-    <div className="max-xl2:container xl2:pl-10 xl2:pr-10">
+    <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
       <SingleFontInfo singleFontData={singleFontData} />
       <Separator />
