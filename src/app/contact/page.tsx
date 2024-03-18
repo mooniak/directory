@@ -26,7 +26,6 @@ export default function Contact() {
           </svg>
         </div>
         <span className="sm2:text-[28px] text-[20px] lg2:w-[504px] lg2:h-[200px] w-auto h-auto lg2:text-start sm2:pt-10 lg2:pt-0 mb-10">
-          {/* <span className="sm2:text-[28px]  sm2:w-auto  w-auto h-auto lg2:text-start sm2:pt-10 lg2:pt-0 mb-10"> */}
           Looking to get a high quality type-work done? or Interested in
           collaborating with us on a project? We are interested too... <br />{" "}
           Get in touch with us.
@@ -91,7 +90,7 @@ export default function Contact() {
                 </Link>
               </div>
               <Separator className="bg-border" />
-              <div className="flex items-center gap-10">
+              <div className="flex items-center pt-2 gap-10">
                 <span className="text-sm">Email </span>
                 <Link
                   className="text-sm font-bold pl-7"
