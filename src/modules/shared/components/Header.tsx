@@ -1,11 +1,14 @@
 "use client";
-import { ArrowLeft } from "lucide-react";
+import { ArrowLeft, X } from "lucide-react";
 import { Button } from "@modules/shared/components/ui/button";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
+import { useState } from "react";
+import { Sidebar } from "@modules/shared/components/Sidebar";
 
 export function Header() {
   const navButtonClassName = "cursor-pointer hover:underline ";
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
   return (
     <div className="w-full border-b border-black h-[60px]">
@@ -21,10 +24,18 @@ export function Header() {
           <Button
             variant="ghost"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none"
+            onClick={() => {
+              setIsSidebarOpen((prevState) => !prevState);
+            }}
           >
-            <ArrowLeft color="#000000" />
+            {isSidebarOpen ? (
+              <X color="#000000" />
+            ) : (
+              <ArrowLeft color="#000000" />
+            )}
           </Button>
         </div>
+
         <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
           <div className="lg2:gap-[40px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
             <Link className={navButtonClassName} href="/">
@@ -44,6 +55,10 @@ export function Header() {
             </Link>
           </div>
         </div>
+        <Sidebar
+          isSidebarOpen={isSidebarOpen}
+          className={`${!isSidebarOpen ? "" : ""} block sm2:hidden `}
+        />
         <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center hidden w-full lg2:block sm2:w-auto">
           <div className="flex items-center gap-1 justify-end pt-3">
             <SocialMediaIcon />
