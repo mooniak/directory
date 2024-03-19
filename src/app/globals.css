@@ -1,8 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Madimi+One&family=Space+Grotesk:wght@300..700&family=Stick+No+Bills:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Madimi+One&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Caveat:wght@400..700&family=Madimi+One&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Caveat:wght@400..700&family=Madimi+One&family=Mansalva&family=Noto+Serif+SC&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
  
 @layer base {
+
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 222.2 84% 4.9%;
@@ -65,7 +81,7 @@
     --ring: 212.7 26.8% 83.9%;
   }
 }
- 
+
 @layer base {
   * {
     @apply border-border;
