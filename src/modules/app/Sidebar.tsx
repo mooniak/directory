@@ -25,7 +25,7 @@ export function Sidebar({ isSidebarOpen, className }: sidebarProps) {
             )}
           >
             <div>
-              <Link className={navButtonClassName} href="/">
+              <Link className={navButtonClassName} href="/public">
                 Fonts
               </Link>
             </div>
@@ -36,7 +36,7 @@ export function Sidebar({ isSidebarOpen, className }: sidebarProps) {
             </div>
 
             <div>
-              <Link className={navButtonClassName} href="/">
+              <Link className={navButtonClassName} href="/public">
                 Tools
               </Link>
             </div>

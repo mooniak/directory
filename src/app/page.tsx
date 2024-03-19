@@ -1,10 +1,11 @@
 import { Separator } from "@modules/shared/components/ui/separator";
-import { HomeHeader } from "@modules/shared/components/HomeHeader";
+import { HomeHeader } from "@modules/home/HomeHeader";
 import { ArrowRight, MoveDown } from "lucide-react";
-import { FontRowView } from "@modules/shared/components/FontRowView";
-import { Footer } from "@modules/shared/components/Footer";
-import { HomeSvg } from "@modules/shared/components/HomeSvg";
+import { FontRowView } from "@modules/home/FontRowView";
+import { Footer } from "@modules/app/Footer";
+import { HomeSvg } from "@modules/home/HomeSvg";
 import Link from "next/link";
+
 export default function Home() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
@@ -17,17 +18,21 @@ export default function Home() {
         </h1>
 
         <Separator className="xl2:bg-border sm2:bg-black" />
+
         <div className="grid md2:grid-cols-2 gap-5 pt-10 pb-10 justify-center items-center xl2:container">
           <div className="hidden md2:block w-full">
             <HomeSvg className="w-suto h-auto mr-[30px]" />
           </div>
+
           <div className="text-left w-[100%] h-fit ">
             <span className=" text-20px lg2:text-28px">
               We are the global leader in Sinhala typography, advancing Lankan
               visual identity with multilingual fonts and design that respect
               culture and freedom.
             </span>
+
             <br />
+
             <div className=" hidden sm2:block">
               <span className=" text-20px lg2:text-28px cursor-pointer hover:underline  hidden xl2:block">
                 <Link className="flex items-center" href="/about/">

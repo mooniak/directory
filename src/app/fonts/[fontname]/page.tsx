@@ -1,14 +1,14 @@
 "use client";
 
-import { Header } from "@modules/shared/components/Header";
+import { Header } from "@modules/app/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
-import { SingleFontInfo } from "@modules/shared/components/SingleFontInfo";
+import { SingleFontInfo } from "@modules/fonts/SingleFontInfo";
 import { Slider } from "@modules/shared/components/ui/slider";
 import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { useParams } from "next/navigation";
-import { WeightsAndStyles } from "@modules/shared/components/WeightsAndStyles";
-import { Footer } from "@modules/shared/components/Footer";
+import { WeightsAndStyles } from "@modules/fonts/WeightsAndStyles";
+import { Footer } from "@modules/app/Footer";
 import { Input } from "@app/modules/shared/components/ui/input";
 import {
   Select,
@@ -17,106 +17,8 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@modules/shared/components/ui/select";
+import { data, fontWeights } from "@modules/fonts/data/fontData";
 
-const data = [
-  {
-    fontName: "Abhaya Libre",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: "AbhayaLibre",
-  },
-  {
-    fontName: "යාල්දේවි",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Yaldevi", sans-serif;',
-  },
-  {
-    fontName: "Stick No Bills",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Stick No Bills", "sans-serif"',
-  },
-  {
-    fontName: "Whisper",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Whisper", cursive',
-  },
-  {
-    fontName: "සයලම",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Noto Serif Sinhala", serif;',
-  },
-  {
-    fontName: "Madimi One",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Madimi One", sans-serif;',
-  },
-  {
-    fontName: "Caveat",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Caveat", cursive;',
-  },
-  {
-    fontName: "Mansalva",
-    version: "v1.600 ",
-    lang: "Latin, Sinhala",
-    owner: "Pushpananda Ekanayak",
-    site: "Libre Font",
-    fontFamily: '"Mansalva", sans-serif;',
-  },
-];
-
-const fontWeights = [
-  {
-    className: "extralight",
-    size: "200",
-    name: "Extra light",
-  },
-  {
-    className: "light",
-    size: "300",
-    name: "light",
-  },
-  {
-    className: "normal",
-    size: "400",
-    name: "Normal",
-  },
-  {
-    className: "font-medium",
-    size: "500",
-    name: "Medium",
-  },
-  {
-    className: "semibold",
-    size: "600",
-    name: "Semibold",
-  },
-  {
-    className: "bold",
-    size: "700",
-    name: "Bold",
-  },
-];
 export default function Page() {
   const { fontname } = useParams();
   const decodedFontName = decodeURIComponent(String(fontname));
@@ -160,6 +62,7 @@ export default function Page() {
                 </Select>
               </div>
             </span>
+
             <Button
               variant="ghost"
               onClick={() => {
@@ -168,6 +71,7 @@ export default function Page() {
             >
               Size : {isFontSize}px
             </Button>
+
             <div className="w-[290px] pl-5">
               {isShowSlider && (
                 <Slider
@@ -186,6 +90,7 @@ export default function Page() {
             </div>
           </div>
         </div>
+
         <span
           className="font-normal pt-10 hidden md2:block"
           style={{
@@ -208,8 +113,14 @@ export default function Page() {
             }) => {
               setIsInputName(event.target.value as string);
             }}
+            onBlur={() => {
+              if (isInputName === "") {
+                setIsInputName(singleFontData?.fontName);
+              }
+            }}
           />
         </span>
+
         <span
           className="md2:hidden block font-normal  pt-10"
           style={{
@@ -238,17 +149,21 @@ export default function Page() {
           <div className="sm2:pb-16 pb-2">
             <span className="font-bold text-22px ">Details </span>
           </div>
+
           <Separator className="sm2:block hidden" />
+
           <div className="flex items-center gap-9 pt-8 pb-8">
             <span className="font-bold">Font Name &nbsp;&nbsp;</span>
             <span>{singleFontData?.fontName}</span>
           </div>
+
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
             <span className="font-bold">Designers &nbsp;&nbsp;&nbsp;</span>
             <span>{singleFontData?.owner}</span>
           </div>
+
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
@@ -257,6 +172,7 @@ export default function Page() {
             </span>
             <span>{singleFontData?.lang}</span>
           </div>
+
           <Separator />
 
           <div className="flex items-center gap-9 pt-8 pb-8">
@@ -265,12 +181,15 @@ export default function Page() {
             </span>
             <span>OFL</span>
           </div>
+
           <Separator />
         </div>
+
         <div>
           <div className="pb-16 lg2:pt-0 pt-10">
             <span className="font-bold text-22px "> About</span>
           </div>
+
           <p className="w-[90%] text-20px">
             With a global view and local roots, Mooniak specializes in producing
             multi-script fonts and typography for Lankan audiences in Sinhala,
@@ -288,6 +207,7 @@ export default function Page() {
       <Separator />
       <div className="pt-16 xl2:container">
         <span className="font-bold text-22px">Glyphs</span>
+
         <div className="w-auto pt-16 font-AbhayaLibre lg2:w-[50%]">
           <span
             style={{

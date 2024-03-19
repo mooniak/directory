@@ -5,14 +5,14 @@ import Link from "next/link";
 import { useRouter } from "next/navigation";
 
 type footerProps = {
-  readonly inPage?: boolean;
+  readonly isPage?: boolean;
 };
-export function Footer({ inPage }: footerProps) {
+export function Footer({ isPage }: footerProps) {
   const router = useRouter();
 
   return (
     <div>
-      {!inPage && (
+      {!isPage && (
         <div className="text-hd3 pb-10 text-center font-AbhayaLibre">෴</div>
       )}
       <Separator />
@@ -53,7 +53,7 @@ export function Footer({ inPage }: footerProps) {
           </Link>
           <Link
             className="col-span-1 md:col-start-1 col-start-1 col-end-3  cursor-pointer hover:underline mt-2"
-            href="/"
+            href="/public"
           >
             Tools
           </Link>

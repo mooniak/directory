@@ -1,11 +1,12 @@
-import { Header } from "@modules/shared/components/Header";
+import { Header } from "@modules/app/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
-import { Footer } from "@modules/shared/components/Footer";
+import { Footer } from "@modules/app/Footer";
 
 export default function Community() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
+
       <div className="grid lg2:grid-cols-2 lg2:p-16 pt-10 pb-10 items-center xl2:container ">
         <div>
           <h1
@@ -18,10 +19,12 @@ export default function Community() {
             වෙන්න
           </h1>
         </div>
+
         <div className="md2:w-full  w-auto">
           <h2 className="font-bold text-[36px] max-[992px]:pt-10 ">
             Mooniak Circle
           </h2>
+
           <p className="pt-10 text-[20px] ">
             Mooniak Circle is a private community hosted by Mooniak to
             collaborate on our mission to advance Lankan visual identity. Join
@@ -31,6 +34,7 @@ export default function Community() {
           </p>
           <br />
           <p className=" text-[20px]">Members of Mooniak Circle will get;</p>
+
           <ul className="list-disc pl-8 space-y-1 text-[20px]">
             <li>Test latest updates to our fonts</li>
             <li>Early Access to new work-in-progress fonts</li>
@@ -39,13 +43,15 @@ export default function Community() {
         </div>
       </div>
       <Separator />
+
       <div className="lg2:p-10 pt-5 pb-5 xl2:container">
         <span className="font-bold text-[36px]">
           Join the <br />
           Community
         </span>
       </div>
-      <Footer inPage />
+
+      <Footer isPage />
     </div>
   );
 }

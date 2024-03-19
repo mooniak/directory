@@ -1,12 +1,13 @@
-import { Header } from "@modules/shared/components/Header";
+import { Header } from "@modules/app/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
-import { Footer } from "@modules/shared/components/Footer";
-import { FounderInfo } from "@modules/shared/components/FounderInfo";
+import { Footer } from "@modules/app/Footer";
+import { FounderInfo } from "@modules/fonts/FounderInfo";
 
 export default function About() {
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
+
       <div className="pt-10 pb-10 grid lg2:grid-cols-2 gap-10 xl2:container">
         <div className="pt-5 pb-5 flex justify-center lg:justify-start">
           <svg
@@ -21,13 +22,16 @@ export default function About() {
             />
           </svg>
         </div>
+
         <div className="sm2:hidden block pt-5 ">
           <Separator />
         </div>
+
         <h2 className="text-[50px] sm2:hidden block pt-10">
           Mooniak: <br />
           The Sri Lankan Type Foundry
         </h2>
+
         <div
           className="lg2:w-[90%]   sm2:text-[20px]"
           style={{
@@ -39,16 +43,18 @@ export default function About() {
           Tamil, and English languages. In addition to incubating and releasing
           open-source fonts, we also provide custom typeface design, logotype
           design, lettering, and editorial design services for select clients.
-          Almost all of Mooniak's work is published under Libre/Open source
+          Almost all of Mooniak&apos;s work is published under Libre/Open source
           licenses. We take pride in building a thriving community of letterform
           lovers in Sri Lanka, and with a small team of full-timers and
           collaborators from all around the world, we are advancing the Lankan
           visual identity.
         </div>
       </div>
+
       <Separator />
+
       <div className="grid xl2:grid-cols-2 sm2:pb-20 pb-10 xl2:container">
-        <div className="">
+        <div>
           <div className="sm2:pt-20 pt-10 sm2:pb-20 pb-10">
             <span className=" font-bold text-start text-[26px] xl2:block hidden">
               A Brief History <br />
@@ -89,6 +95,7 @@ export default function About() {
             and consulting on a number of international type design projects.
           </p>
         </div>
+
         <div className="pt-[1px] max-[1600px]:hidden">
           <div className="grid grid-rows-2">
             <div>
@@ -104,10 +111,12 @@ export default function About() {
           </div>
         </div>
       </div>
+
       <Separator className="" />
+
       <h2 className="pt-20 pb-5 text-[36px] container">People</h2>
       <FounderInfo />
-      <Footer inPage />
+      <Footer isPage />
     </div>
   );
 }

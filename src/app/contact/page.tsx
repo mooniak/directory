@@ -1,16 +1,21 @@
-import { Header } from "@modules/shared/components/Header";
+import { Header } from "@modules/app/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
 import { Input } from "@modules/shared/components/ui/input";
 import { Textarea } from "@modules/shared/components/ui/textarea";
 import { Button } from "@modules/shared/components/ui/button";
-import { Footer } from "@modules/shared/components/Footer";
+import { Footer } from "@modules/app/Footer";
 import Link from "next/link";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
+import { EMAIL, PHONE_NO } from "@app/config";
 
 export default function Contact() {
+  const phoneNoWithoutZero = PHONE_NO.replace(/^0/, "");
+  const phoneNoWithoutSpaces = phoneNoWithoutZero.replace(/\s/g, "");
+
   return (
     <div className="max-xl2:container xl2:pl-[5%] xl2:pr-[5%]">
       <Header />
+
       <div className="container grid lg2:grid-cols-2 items-center justify-center sm2:pt-16 pt-10 sm2:pb-16  ">
         <div className="justify-center flex">
           <svg
@@ -25,13 +30,16 @@ export default function Contact() {
             />
           </svg>
         </div>
+
         <span className="sm2:text-[28px] text-[20px] lg2:w-[504px] lg2:h-[200px] w-auto h-auto lg2:text-start sm2:pt-10 lg2:pt-0 mb-10">
           Looking to get a high quality type-work done? or Interested in
           collaborating with us on a project? We are interested too... <br />{" "}
           Get in touch with us.
         </span>
       </div>
+
       <Separator className="container" />
+
       <div className="grid lg2:grid-cols-2 lg2:container">
         <div className="flex items-center">
           <div className="w-[100%] pt-20 pb-20 lg2:pr-40">
@@ -64,7 +72,9 @@ export default function Contact() {
               </div>
             </div>
           </div>
+
           <div className="flex-1" />
+
           <Separator
             orientation="vertical"
             className="h-full hidden lg2:block"
@@ -80,26 +90,31 @@ export default function Contact() {
             </span>
             <div className="space-y-2 pt-10">
               <Separator className="bg-border" />
+
               <div className="flex items-center gap-10">
                 <span className="text-sm">Whatsapp </span>
                 <Link
                   className="text-sm font-bold"
-                  href="https://wa.me//+94771234567"
+                  href={`https://wa.me//+94${phoneNoWithoutSpaces}`}
                 >
-                  077 123 4567
+                  {PHONE_NO}
                 </Link>
               </div>
+
               <Separator className="bg-border" />
+
               <div className="flex items-center gap-10">
                 <span className="text-sm">Email </span>
                 <Link
                   className="text-sm font-bold pl-7"
                   href="mailto:hello@mooniak.com"
                 >
-                  hello@mooniak.com
+                  {EMAIL}
                 </Link>
               </div>
+
               <Separator className="bg-border" />
+
               <div className="lg2:pt-1 pb-16">
                 <SocialMediaIcon />
               </div>
@@ -107,7 +122,8 @@ export default function Contact() {
           </div>
         </div>
       </div>
-      <Footer inPage />
+
+      <Footer isPage />
     </div>
   );
 }

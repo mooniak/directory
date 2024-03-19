@@ -4,7 +4,7 @@ import { Button } from "@modules/shared/components/ui/button";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
 import { useState } from "react";
-import { Sidebar } from "@modules/shared/components/Sidebar";
+import { Sidebar } from "@modules/app/Sidebar";
 import { useRouter } from "next/navigation";
 
 export function Header() {
@@ -51,7 +51,7 @@ export function Header() {
             <Link className={navButtonClassName} href="/about/">
               About
             </Link>
-            <Link className={navButtonClassName} href="/">
+            <Link className={navButtonClassName} href="/public">
               Tools
             </Link>
             <Link className={navButtonClassName} href="/community">

@@ -57,11 +57,11 @@ export function FounderInfo() {
                 <Separator className="space-y-5" />
               </div>
               <div className="hidden sm2:block">
-                <Link href="/" className="text-[14px]">
+                <Link href="/public" className="text-[14px]">
                   LinkedIn
                 </Link>
                 <br />
-                <Link href="/" className="text-[14px] ">
+                <Link href="/public" className="text-[14px] ">
                   Instagram
                 </Link>
               </div>
