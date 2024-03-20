@@ -13,7 +13,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Yaldevi", sans-serif;',
+    fontFamily: "Yaldevi",
   },
   {
     fontName: "Stick No Bills",
@@ -21,7 +21,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Stick No Bills", "sans-serif"',
+    fontFamily: "Stick No Bills",
   },
   {
     fontName: "Whisper",
@@ -29,7 +29,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Whisper", cursive',
+    fontFamily: "Whisper",
   },
   {
     fontName: "සයලම",
@@ -37,7 +37,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Noto Serif Sinhala", serif;',
+    fontFamily: "Noto Serif Sinhala",
   },
   {
     fontName: "Madimi One",
@@ -45,7 +45,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Madimi One", sans-serif;',
+    fontFamily: "Madimi One",
   },
   {
     fontName: "Caveat",
@@ -53,7 +53,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Caveat", cursive;',
+    fontFamily: "Caveat",
   },
   {
     fontName: "Mansalva",
@@ -61,7 +61,7 @@ export const data = [
     lang: "Latin, Sinhala",
     owner: "Pushpananda Ekanayak",
     site: "Libre Font",
-    fontFamily: '"Mansalva", sans-serif;',
+    fontFamily: "Mansalva",
   },
 ];
 

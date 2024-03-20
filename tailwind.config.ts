@@ -52,7 +52,6 @@ const config = {
     },
     fontFamily: {
       SpaceGrotesk: ["Space Grotesk", "sans-serif"],
-      AbhayaLibre: ["Abhaya Libre", "serif"],
     },
     extend: {
       lineHeight: {

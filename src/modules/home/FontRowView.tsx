@@ -4,77 +4,11 @@ import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { data } from "@modules/fonts/data/fontData";
 
 export function FontRowView() {
   const buttonClass =
     "w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full";
-
-  const data = [
-    {
-      fontName: "Abhaya Libre",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: "AbhayaLibre",
-    },
-    {
-      fontName: "යාල්දේවි",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Yaldevi", sans-serif;',
-    },
-    {
-      fontName: "Stick No Bills",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Stick No Bills", "sans-serif"',
-    },
-    {
-      fontName: "Whisper",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Whisper", cursive',
-    },
-    {
-      fontName: "සයලම",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Noto Serif Sinhala", serif;',
-    },
-    {
-      fontName: "Madimi One",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Madimi One", sans-serif;',
-    },
-    {
-      fontName: "Caveat",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Caveat", cursive;',
-    },
-    {
-      fontName: "Mansalva",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Mansalva", sans-serif;',
-    },
-  ];
 
   const [showSeparators, setShowSeparators] = useState(
     Array(data.length).fill(false),

@@ -1,18 +1,57 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;700;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Madimi+One&family=Space+Grotesk:wght@300..700&family=Stick+No+Bills:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Stick+No+Bills:wght@200..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre:wght@400;500;600;700;800&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Madimi+One&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Caveat:wght@400..700&family=Madimi+One&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Abhaya+Libre&family=Caveat:wght@400..700&family=Madimi+One&family=Mansalva&family=Noto+Serif+SC&family=Noto+Serif+Sinhala:wght@100..900&family=Stick+No+Bills:wght@200..800&family=Whisper&family=Yaldevi:wght@200..700&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
- 
+
+@font-face {
+  font-family: "SpaceGrotesk";
+  font-style: normal;
+  src: url("/public/fonts/SpaceGrotesk-VariableFont_wght.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Stick No Bills";
+  font-style: normal;
+  src: url("../../public/fonts/StickNoBills-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+  font-family: "AbhayaLibre";
+  font-style: normal;
+  src: url("../../public/fonts/AbhayaLibre-Medium.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Yaldevi";
+  font-style: normal;
+  src: url("../../public/fonts/Yaldevi-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Whisper";
+  font-style: normal;
+  src: url("../../public/fonts/Whisper-Regular.ttf") format('truetype');
+}
+
+@font-face {
+  font-family: "Noto Serif Sinhala";
+  font-style: normal;
+  src: url("../../public/fonts/NotoSerifSinhala-VariableFont_wdth,wght.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Madimi One";
+  font-style: normal;
+  src: url("../../public/fonts/MadimiOne-Regular.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Caveat";
+  font-style: normal;
+  src: url("../../public/fonts/Caveat-VariableFont_wght.ttf") format('truetype');
+}
+@font-face {
+  font-family: "Mansalva";
+  font-style: normal;
+  src: url("../../public/fonts/Mansalva-Regular.ttf") format('truetype');
+}
+
+
 @layer base {
 
   html {

@@ -96,7 +96,7 @@ export default function Page() {
           style={{
             fontWeight: value,
             fontSize: isFontSize,
-            fontFamily: singleFontData?.fontFamily || "inherit",
+            fontFamily: singleFontData?.fontFamily,
           }}
         >
           <Input
@@ -106,7 +106,7 @@ export default function Page() {
               outlineColor: "transparent",
               outline: "none",
               fontSize: isFontSize,
-              fontFamily: singleFontData?.fontFamily || "inherit",
+              fontFamily: singleFontData?.fontFamily,
             }}
             onChange={(event: {
               target: { value: React.SetStateAction<string> };
@@ -125,7 +125,7 @@ export default function Page() {
           className="md2:hidden block font-normal  pt-10"
           style={{
             fontSize: "clamp(40px, 15vw, 330px)",
-            fontFamily: singleFontData?.fontFamily || "inherit",
+            fontFamily: singleFontData?.fontFamily,
           }}
         >
           {singleFontData?.fontName}{" "}
