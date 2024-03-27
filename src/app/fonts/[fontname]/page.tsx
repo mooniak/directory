@@ -206,9 +206,14 @@ export default function Page() {
       </div>
       <Separator />
       <div className="pt-16 xl2:container">
-        <span className="font-bold text-22px">Glyphs</span>
+        <span className="font-bold text-[20px]">Glyphs</span>
 
-        <div className="w-auto pt-16 font-AbhayaLibre lg2:w-[50%]">
+        <div
+          className="w-auto pt-16  lg2:w-[50%]"
+          style={{
+            fontFamily: singleFontData?.fontFamily,
+          }}
+        >
           <span
             style={{
               fontSize: "clamp(40px, 3vw, 60px)",

@@ -17,7 +17,7 @@ export function Header() {
       <div className="grid grid-cols-12 gap-4  h-[42px] items-center">
         <Link
           href="/"
-          className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer"
+          className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer font-SpaceGrotesk"
         >
           Mooniak
         </Link>

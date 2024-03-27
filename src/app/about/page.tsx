@@ -65,7 +65,7 @@ export default function About() {
             </span>
           </div>
 
-          <p className="text-[20px] lg2:w-[80%] ">
+          <p className="text-[18px] lg2:w-[80%] ">
             In its first decade Mooniak was a point of collaboration which
             launched many projects. Mooniak has been operating as a collective
             of creatives focusing on community impact design projects since

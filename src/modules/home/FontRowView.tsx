@@ -42,16 +42,17 @@ export function FontRowView() {
                 className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-2  duration-500" : "translate-y-2  duration-500"} `}
               >
                 <div className="grid grid-cols-2  grid-rows-4 lg2:w-[270px] xl2:w-[366px]">
-                  <div className="col-span-2  h-10">
+                  <div className="col-span-2  h-10 ">
                     <span className="font-bold sm2:text-18px text-50px ">
                       {font.fontName}
                     </span>
                     <br />
-                    <span className="text-gray-500 text-sm">
+                    <span className="text-gray-500 text-sm ">
                       {font.version}
                       <Separator />
                     </span>
                   </div>
+
                   <div className="col-span-1 mt-3">
                     {font.lang}
                     <Separator />
