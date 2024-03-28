@@ -1,7 +1,6 @@
 "use client";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
 
 const navButtonClassName = "cursor-pointer hover:underline ";
 export function HomeHeader() {

@@ -1,7 +1,7 @@
 "use client";
 import { Separator } from "@modules/shared/components/ui/separator";
 import Link from "next/link";
-import { ArrowDown, ArrowUp, Facebook, Github, Instagram } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { founders } from "@modules/about/data/foundersData";
@@ -9,7 +9,7 @@ import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 
 export function FounderInfo() {
   const [descriptionShow, setDescriptionShow] = useState(Array(3).fill(false));
-  const iconClassName = "w-[19.81px] h-[19.81px]";
+  // Const iconClassName = "w-[19.81px] h-[19.81px]";
 
   const toggleDescription = (index: number) => {
     setDescriptionShow((prevState) => {
