@@ -1,7 +1,9 @@
+"use client";
 import { cn } from "@app/lib/utils";
 import { Separator } from "@modules/shared/components/ui/separator";
 import Link from "next/link";
 import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
+import { useEffect } from "react";
 
 type sidebarProps = {
   readonly isSidebarOpen: boolean;
@@ -10,9 +12,17 @@ type sidebarProps = {
 export function Sidebar({ isSidebarOpen, className }: sidebarProps) {
   const navButtonClassName = "cursor-pointer hover:underline  ";
 
+  const toggleBodyOverflow = (isOpen: boolean) => {
+    document.body.style.overflowY = isOpen ? "hidden" : "auto";
+  };
+
+  useEffect(() => {
+    toggleBodyOverflow(isSidebarOpen);
+  }, [isSidebarOpen]);
+
   return (
     <div
-      className={`${isSidebarOpen ? " translate-x-0 duration-500 " : "-translate-x-full duration-500"}  w-screen pr-16 block sm2:hidden  `}
+      className={`${isSidebarOpen ? " translate-x-0 duration-500 " : "-translate-x-full duration-500"} z-10 w-screen pr-16 block sm2:hidden  `}
     >
       {isSidebarOpen && (
         <div>
