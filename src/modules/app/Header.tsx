@@ -39,7 +39,7 @@ export function Header() {
         </div>
 
         <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
-          <div className="lg2:gap-[40px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
+          <div className="lg2:gap-[32px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
             <div
               className={navButtonClassName}
               onClick={() => {

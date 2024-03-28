@@ -67,12 +67,13 @@ export default function About() {
 
           <p className="text-[18px] lg2:w-[80%] ">
             In its first decade Mooniak was a point of collaboration which
-            launched many projects. Mooniak has been operating as a collective
-            of creatives focusing on community impact design projects since
-            2010. While the team consists of a multidisciplinary team, our
-            primary focus is on typography and type design projects and
-            providing services to commercial entities to enable effective
-            communications in all three official languages of Sri Lanka.
+            launched many projects. <br />
+            Mooniak has been operating as a collective of creatives focusing on
+            community impact design projects since 2010. While the team consists
+            of a multidisciplinary team, our primary focus is on typography and
+            type design projects and providing services to commercial entities
+            to enable effective communications in all three official languages
+            of Sri Lanka.
             <br /> <br />
             In 2015 Mooniak received funds from Google to produce a set of
             Sinhala, Tamil and Latin fonts and was subsequently incorporated as

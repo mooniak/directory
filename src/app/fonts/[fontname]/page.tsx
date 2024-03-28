@@ -161,7 +161,10 @@ export default function Page() {
 
           <div className="flex items-center gap-9 pt-8 pb-8">
             <span className="font-bold">Designers &nbsp;&nbsp;&nbsp;</span>
-            <span>{singleFontData?.owner}</span>
+            <span>
+              Mooniak <br />
+              {singleFontData?.owner}
+            </span>
           </div>
 
           <Separator />

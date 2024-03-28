@@ -62,7 +62,7 @@ export function FontRowView() {
                     <Separator />
                   </div>
                   <div className="col-span-2 mt-0.5">
-                    {font.owner} <Separator />
+                    {font.owner}, Mooniak <Separator />
                   </div>
                   <div className="col-span-2 mt-[-5px]">{font.site}</div>
                 </div>
