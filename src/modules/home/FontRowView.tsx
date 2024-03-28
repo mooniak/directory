@@ -5,11 +5,20 @@ import { Button } from "@modules/shared/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 import { data } from "@modules/fonts/data/fontData";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@modules/shared/components/ui/dialog";
+import { GetTheFontDialog } from "@modules/home/GetTheFontDialog";
 
 export function FontRowView() {
   const buttonClass =
     "w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full";
-
+  const [isDialogOpen, setIsDialogOpen] = useState(false);
   const [showSeparators, setShowSeparators] = useState(
     Array(data.length).fill(false),
   );
@@ -103,13 +112,24 @@ export function FontRowView() {
 
               <div className="flex mt-[20px] pb-[30px] gap-5">
                 <div className="gap-5 flex">
-                  <Button className={`${buttonClass} `} variant="ghost">
+                  <Button
+                    className={`${buttonClass} `}
+                    variant="ghost"
+                    onClick={() => {
+                      setIsDialogOpen(true);
+                    }}
+                  >
                     Get the Font
                   </Button>
                   <Button className={`${buttonClass} `} variant="ghost">
                     Dev Version
                   </Button>
                 </div>
+
+                <GetTheFontDialog
+                  isDialogOpen={isDialogOpen}
+                  setIsDialogOpen={setIsDialogOpen}
+                />
 
                 <div className="flex  items-center gap-2 ml-[150px] ">
                   <ArrowRight />
