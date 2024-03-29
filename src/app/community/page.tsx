@@ -1,6 +1,8 @@
 import { Header } from "@modules/app/Header";
 import { Separator } from "@modules/shared/components/ui/separator";
 import { Footer } from "@modules/app/Footer";
+import { Button } from "@modules/shared/components/ui/button";
+import { MoveRight } from "lucide-react";
 
 export default function Community() {
   return (
@@ -44,11 +46,19 @@ export default function Community() {
       </div>
       <Separator />
 
-      <div className="lg2:p-10 pt-5 pb-5 xl2:container">
-        <span className="font-bold text-[36px]">
-          Join the <br />
-          Community
-        </span>
+      <div className="lg2:p-10 pt-5 pb-5 xl2:container grid lg2:grid-cols-2 items-center lg2:gap-0 gap-10">
+        <div>
+          <span className="font-bold text-[36px]">Join the Community</span>
+          <p>
+            Let us know your interest by filling the form. <br /> follow the
+            link to the google form
+          </p>
+        </div>
+        <div>
+          <Button variant="outline" className="rounded-full gap-5 p-5">
+            To the form <MoveRight size={25} strokeWidth={1.25} />
+          </Button>
+        </div>
       </div>
 
       <Footer isPage />
