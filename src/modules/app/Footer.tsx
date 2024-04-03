@@ -16,7 +16,7 @@ export function Footer({ isPage }: footerProps) {
         <div className="text-[60px] pb-10 text-center font-AbhayaLibre">෴</div>
       )}
       <Separator />
-      <div className="grid lg2:grid-rows-3 grid-rows-4 lg2:grid-cols-12  grid-cols-8 ">
+      <div className="grid lg2:grid-rows-3 grid-rows-4 lg2:grid-cols-12  grid-cols-8 max-lg2:pt-5">
         <Link
           href="/"
           className="lg2:col-start-1 lg2:col-end-5 row-start-1 lg2:row-start-2 text-3xl  font-bold text-start col-start-1 col-end-2 font-SpaceGrotesk"
