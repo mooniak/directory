@@ -24,7 +24,7 @@ export function Footer({ isPage }: footerProps) {
           Mooniak
         </Link>
 
-        <div className="pt-6 row-span-3 grid grid-rows-3 md:grid-cols-6  h-20 md:col-start-7 md:col-end-9 xl2:col-start-7 xl2:col-end-7 lg2:col-start-7 gap-4 lg2:gap-8 lg2:col-end-9 sm2:col-start-5 sm2:col-end-7  grid-cols-6 col-start-6 col-end-9 text-start font-bold text-sm">
+        <div className="pt-0 lg2:pt-6 row-span-3 grid grid-rows-3 md:grid-cols-6  h-20 md:col-start-7 md:col-end-9 xl2:col-start-7 xl2:col-end-7 lg2:col-start-7 gap-4 lg2:gap-8 lg2:col-end-9 sm2:col-start-5 sm2:col-end-7  grid-cols-6 col-start-6 col-end-9 text-start font-bold text-sm">
           <div
             className="col-span-1 md:col-start-1  col-start-1 col-end-3  cursor-pointer hover:underline mt-2"
             onClick={() => {
