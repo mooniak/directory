@@ -43,7 +43,7 @@ export function FontRowView() {
               >
                 <div className="grid grid-cols-2  grid-rows-4 lg2:w-[270px] xl2:w-[366px]">
                   <div className="col-span-2  h-10 ">
-                    <span className="font-bold sm2:text-18px text-50px ">
+                    <span className="font-bold sm2:text-[18px] text-[50px] ">
                       {font.fontName}
                     </span>
                     <br />

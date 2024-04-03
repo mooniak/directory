@@ -147,7 +147,7 @@ export default function Page() {
       <div className="grid lg2:grid-cols-2 lg2:gap-20 pt-16 pb-16 xl2:container ">
         <div>
           <div className="sm2:pb-16 pb-2">
-            <span className="font-bold text-22px ">Details </span>
+            <span className="font-bold text-[22px] ">Details </span>
           </div>
 
           <Separator className="sm2:block hidden" />
@@ -189,11 +189,11 @@ export default function Page() {
         </div>
 
         <div>
-          <div className="pb-16 lg2:pt-0 pt-10">
-            <span className="font-bold text-22px "> About</span>
+          <div className="pb-14 lg2:pt-0 pt-10">
+            <span className="font-bold text-[22px] "> About</span>
           </div>
 
-          <p className="w-[90%] text-20px">
+          <p className="w-[90%] text-[20px]">
             With a global view and local roots, Mooniak specializes in producing
             multi-script fonts and typography for Lankan audiences in Sinhala,
             Tamil, and English languages. In addition to incubating and

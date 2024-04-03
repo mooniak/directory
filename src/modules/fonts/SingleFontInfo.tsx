@@ -46,9 +46,9 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
 
         <div className="flex sm2:items-center col-start-2 col-end-4 sm2:justify-center ">
           <div className="pl-2 pt-2 sm2:pt-0">
-            <span className="font-bold text-sm2 ">Typeface :</span>
+            <span className="font-bold text-[15px] ">Typeface :</span>
             <br />
-            <span className="font-bold text-sm2">
+            <span className="font-bold text-[15px]">
               {singleFontData?.fontName}
             </span>
           </div>
@@ -59,12 +59,12 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
           </div>
         </div>
         <div className="lg2:col-start-4 lg2:col-end-5 sm2:col-start-4 sm2:col-end-6 col-start-6 col-end-7 hidden sm2:block pt-8">
-          <span className="font-bold text-sm2 ">Designers</span>
+          <span className="font-bold text-[15px] ">Designers</span>
           <br />
           <span>{singleFontData?.owner}</span>
         </div>
         <div className="lg2:col-start-5 sm2:col-start-6 col-start-4 col-end-7 sm2:pt-8 pt-2">
-          <span className="font-bold text-sm2">Scripts</span>
+          <span className="font-bold text-[15px]">Scripts</span>
           <br />
           <span>{singleFontData?.lang}</span>
         </div>

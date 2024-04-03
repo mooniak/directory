@@ -13,16 +13,16 @@ export function Header() {
   const router = useRouter();
 
   return (
-    <div className="w-full border-b border-black h-[60px]">
-      <div className="grid grid-cols-12 gap-4  h-[42px] items-center">
+    <div className="w-full border-b border-black h-[60px] flex items-center ">
+      <div className="grid grid-cols-12 gap-4   items-center">
         <Link
           href="/"
-          className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer font-SpaceGrotesk"
+          className="col-start-1 col-end-2  text-start text-3xl font-bold font-SpaceGrotesk"
         >
           Mooniak
         </Link>
 
-        <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end pt-3 flex items-center sm2:hidden">
+        <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end  flex items-center sm2:hidden">
           <Button
             variant="ghost"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none"
@@ -38,8 +38,8 @@ export function Header() {
           </Button>
         </div>
 
-        <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
-          <div className="lg2:gap-[32px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
+        <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1  text-center hidden w-full sm2:block sm2:w-auto ">
+          <div className="lg2:gap-[32px] gap-[10px] flex items-center  justify-end  font-bold ">
             <div
               className={navButtonClassName}
               onClick={() => {
@@ -66,8 +66,8 @@ export function Header() {
           isSidebarOpen={isSidebarOpen}
           className={`${!isSidebarOpen ? "" : ""} block sm2:hidden `}
         />
-        <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center hidden w-full lg2:block sm2:w-auto">
-          <div className="flex items-center gap-1 justify-end pt-3">
+        <div className="col-start-12 col-end-13  col-span-1 bg-white text-center hidden w-full lg2:block sm2:w-auto">
+          <div className="flex items-center gap-1 justify-end ">
             <SocialMediaIcon />
           </div>
         </div>

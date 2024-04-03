@@ -33,7 +33,7 @@ export function WeightsAndStyles({
               ? isInputName
               : "Jazzed foxes quickly vexed my big brown dog"}
           </span>
-          <span className="md2:hidden block font-bold text-sm2 ">
+          <span className="md2:hidden block font-bold text-[15px] ">
             {font.size}
           </span>
 
@@ -48,7 +48,7 @@ export function WeightsAndStyles({
             {font.name}
           </span>
           <br />
-          <div className="flex items-center gap-8 font-bold text-sm2 pb-8 pt-5 hidden md2:block">
+          <div className="flex items-center gap-8 font-bold text-[15px] pb-8 pt-5 hidden md2:block">
             <span>{font.size}</span> &nbsp;&nbsp;&nbsp;
             <span>{font.className}</span>
           </div>
