@@ -17,7 +17,7 @@ export function Header() {
       <div className="grid grid-cols-12 gap-4  h-[42px] items-center">
         <Link
           href="/"
-          className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer"
+          className="col-start-1 col-end-2 w-[137px] h-[42px] text-start text-3xl pt-4 font-bold cursor-pointer font-SpaceGrotesk"
         >
           Mooniak
         </Link>
@@ -39,7 +39,7 @@ export function Header() {
         </div>
 
         <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1 bg-white h-[42px] text-center hidden w-full sm2:block sm2:w-auto">
-          <div className="lg2:gap-[40px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
+          <div className="lg2:gap-[32px] gap-[10px] flex items-center  justify-end pt-4 font-bold ">
             <div
               className={navButtonClassName}
               onClick={() => {

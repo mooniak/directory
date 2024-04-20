@@ -4,77 +4,11 @@ import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
+import { data } from "@modules/fonts/data/fontData";
 
 export function FontRowView() {
   const buttonClass =
     "w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full";
-
-  const data = [
-    {
-      fontName: "Abhaya Libre",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: "AbhayaLibre",
-    },
-    {
-      fontName: "යාල්දේවි",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Yaldevi", sans-serif;',
-    },
-    {
-      fontName: "Stick No Bills",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Stick No Bills", "sans-serif"',
-    },
-    {
-      fontName: "Whisper",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Whisper", cursive',
-    },
-    {
-      fontName: "සයලම",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Noto Serif Sinhala", serif;',
-    },
-    {
-      fontName: "Madimi One",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Madimi One", sans-serif;',
-    },
-    {
-      fontName: "Caveat",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Caveat", cursive;',
-    },
-    {
-      fontName: "Mansalva",
-      version: "v1.600 ",
-      lang: "Latin, Sinhala",
-      owner: "Pushpananda Ekanayak",
-      site: "Libre Font",
-      fontFamily: '"Mansalva", sans-serif;',
-    },
-  ];
 
   const [showSeparators, setShowSeparators] = useState(
     Array(data.length).fill(false),
@@ -108,16 +42,17 @@ export function FontRowView() {
                 className={`lg2:col-start-1 lg2:col-span-1 text-left  items-center hidden lg2:block ${showSeparators[index] ? "-translate-y-2  duration-500" : "translate-y-2  duration-500"} `}
               >
                 <div className="grid grid-cols-2  grid-rows-4 lg2:w-[270px] xl2:w-[366px]">
-                  <div className="col-span-2  h-10">
+                  <div className="col-span-2  h-10 ">
                     <span className="font-bold sm2:text-18px text-50px ">
                       {font.fontName}
                     </span>
                     <br />
-                    <span className="text-gray-500 text-sm">
+                    <span className="text-gray-500 text-sm ">
                       {font.version}
                       <Separator />
                     </span>
                   </div>
+
                   <div className="col-span-1 mt-3">
                     {font.lang}
                     <Separator />
@@ -127,7 +62,7 @@ export function FontRowView() {
                     <Separator />
                   </div>
                   <div className="col-span-2 mt-0.5">
-                    {font.owner} <Separator />
+                    {font.owner}, Mooniak <Separator />
                   </div>
                   <div className="col-span-2 mt-[-5px]">{font.site}</div>
                 </div>

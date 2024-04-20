@@ -1,14 +1,15 @@
 "use client";
 import { Separator } from "@modules/shared/components/ui/separator";
 import Link from "next/link";
-import { ArrowDown, ArrowUp, Facebook, Github, Instagram } from "lucide-react";
+import { ArrowDown, ArrowUp } from "lucide-react";
 import { useState } from "react";
 import { Button } from "@modules/shared/components/ui/button";
 import { founders } from "@modules/about/data/foundersData";
+import { SocialMediaIcon } from "@modules/shared/components/SocialMediaIcon";
 
 export function FounderInfo() {
   const [descriptionShow, setDescriptionShow] = useState(Array(3).fill(false));
-  const iconClassName = "w-[19.81px] h-[19.81px]";
+  // Const iconClassName = "w-[19.81px] h-[19.81px]";
 
   const toggleDescription = (index: number) => {
     setDescriptionShow((prevState) => {
@@ -21,7 +22,7 @@ export function FounderInfo() {
   return (
     <div>
       {founders.map((founder, index) => (
-        <div key={founder.name} className="xl2:container">
+        <div key={founder.firstName} className="xl2:container">
           <Separator className="bg-border" />
           <div className="grid sm2:grid-cols-2 lg2:grid-cols-4  grid-cols-2 pt-10 sm2:pb-10 gap-5 ">
             <div className="hidden sm2:block">
@@ -32,7 +33,9 @@ export function FounderInfo() {
               />
             </div>
             <div className="font-bold sm2:pr-10 pb-10 sm2:w-[80%]">
-              <span className="text-[20px] ">{founder.name}</span>
+              <span className="text-[20px] ">{founder.firstName}</span>
+              <br />
+              <span className="text-[20px] ">{founder.lastName}</span>
               <div className="pt-5 pb-5">
                 <Separator className="space-y-5" />
               </div>
@@ -47,17 +50,7 @@ export function FounderInfo() {
               </div>
 
               <div className="sm2:hidden block">
-                <div className="flex items-center gap-1 md:justify-end">
-                  <div className="rounded-full p-2 hover:bg-muted cursor-pointer">
-                    <Instagram color="#000000" className={iconClassName} />
-                  </div>
-                  <div className="rounded-full p-2 hover:bg-muted cursor-pointer">
-                    <Github color="#000000" className={iconClassName} />
-                  </div>
-                  <div className="rounded-full p-2 hover:bg-muted cursor-pointer">
-                    <Facebook color="#000000" className={iconClassName} />
-                  </div>
-                </div>
+                <SocialMediaIcon />
               </div>
             </div>
             <div className="sm2:hidden block">

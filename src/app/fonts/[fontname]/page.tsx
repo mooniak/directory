@@ -96,7 +96,7 @@ export default function Page() {
           style={{
             fontWeight: value,
             fontSize: isFontSize,
-            fontFamily: singleFontData?.fontFamily || "inherit",
+            fontFamily: singleFontData?.fontFamily,
           }}
         >
           <Input
@@ -106,7 +106,7 @@ export default function Page() {
               outlineColor: "transparent",
               outline: "none",
               fontSize: isFontSize,
-              fontFamily: singleFontData?.fontFamily || "inherit",
+              fontFamily: singleFontData?.fontFamily,
             }}
             onChange={(event: {
               target: { value: React.SetStateAction<string> };
@@ -125,7 +125,7 @@ export default function Page() {
           className="md2:hidden block font-normal  pt-10"
           style={{
             fontSize: "clamp(40px, 15vw, 330px)",
-            fontFamily: singleFontData?.fontFamily || "inherit",
+            fontFamily: singleFontData?.fontFamily,
           }}
         >
           {singleFontData?.fontName}{" "}
@@ -161,7 +161,10 @@ export default function Page() {
 
           <div className="flex items-center gap-9 pt-8 pb-8">
             <span className="font-bold">Designers &nbsp;&nbsp;&nbsp;</span>
-            <span>{singleFontData?.owner}</span>
+            <span>
+              Mooniak <br />
+              {singleFontData?.owner}
+            </span>
           </div>
 
           <Separator />
@@ -206,9 +209,14 @@ export default function Page() {
       </div>
       <Separator />
       <div className="pt-16 xl2:container">
-        <span className="font-bold text-22px">Glyphs</span>
+        <span className="font-bold text-[20px]">Glyphs</span>
 
-        <div className="w-auto pt-16 font-AbhayaLibre lg2:w-[50%]">
+        <div
+          className="w-auto pt-16  lg2:w-[50%]"
+          style={{
+            fontFamily: singleFontData?.fontFamily,
+          }}
+        >
           <span
             style={{
               fontSize: "clamp(40px, 3vw, 60px)",
