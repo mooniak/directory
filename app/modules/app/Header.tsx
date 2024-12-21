@@ -21,7 +21,7 @@ export function Header() {
           Mooniak
         </Link>
 
-        <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end  flex items-center sm2:hidden">
+        <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end  flex items-center sm:hidden">
           <Button
             variant="ghost"
             className="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg  hover:bg-gray-100 focus:outline-none"
@@ -39,8 +39,8 @@ export function Header() {
           </Button>
         </div>
 
-        <div className="lg2:col-start-4 lg2:col-end-10 col-end-13 col-span-1  text-center hidden w-full sm2:block sm2:w-auto ">
-          <div className="lg2:gap-[32px] gap-[10px] flex items-center  justify-end  font-bold ">
+        <div className="lg:col-start-4 lg:col-end-10 col-end-13 col-span-1  text-center hidden w-full sm:block sm:w-auto ">
+          <div className="lg:gap-[32px] gap-[10px] flex items-center  justify-end  font-bold ">
             <div
               className={navButtonClassName}
               onClick={() => {
@@ -65,9 +65,9 @@ export function Header() {
         </div>
         <Sidebar
           isSidebarOpen={isSidebarOpen}
-          className={`${!isSidebarOpen ? '' : ''} block sm2:hidden `}
+          className={`${!isSidebarOpen ? '' : ''} block sm:hidden `}
         />
-        <div className="col-start-12 col-end-13  col-span-1 bg-white text-center hidden w-full lg2:block sm2:w-auto">
+        <div className="col-start-12 col-end-13  col-span-1 bg-white text-center hidden w-full lg:block sm:w-auto">
           <div className="flex items-center gap-1 justify-end ">
             <SocialMediaIcon />
           </div>

@@ -12,10 +12,10 @@ const config = {
   theme: {
     screens: {
       xxl: '1921px',
-      xl2: '1601px',
-      lg2: '993px',
-      md2: '806px',
-      sm2: '481px',
+      xl: '1601px',
+      lg: '993px',
+      md: '806px',
+      sm: '481px',
     },
     container: {
       center: true,
