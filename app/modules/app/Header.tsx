@@ -52,7 +52,7 @@ export function Header() {
             <Link className={navButtonClassName} to="/about/">
               About
             </Link>
-            <Link className={navButtonClassName} to="/public">
+            <Link className={navButtonClassName} to="#">
               Tools
             </Link>
             <Link className={navButtonClassName} to="/community">

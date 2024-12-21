@@ -13,7 +13,7 @@ export function HomeHeader() {
         </div>
 
         <div>
-          <Link className={navButtonClassName} to="/public">
+          <Link className={navButtonClassName} to="/#">
             Tools
           </Link>
         </div>
