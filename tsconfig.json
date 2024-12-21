@@ -8,8 +8,8 @@
     "module": "ES2022",
     "moduleResolution": "bundler",
     "paths": {
-      "@app/*": ["./src/*"],
-      "@modules/*": ["./src/modules/*"]
+      "@app/*": ["./app/*"],
+      "@modules/*": ["./app/modules/*"]
     },
     "resolveJsonModule": true,
     "types": ["node", "vite/client"],
