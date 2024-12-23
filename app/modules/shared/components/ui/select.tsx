@@ -29,7 +29,7 @@ function SelectTrigger({ ref, className, children, ...props }: React.ComponentPr
 }
 SelectTrigger.displayName = SelectPrimitive.Trigger.displayName
 
-function SelectScrollUpButton({ ref, className, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton> & { ref: React.RefObject<React.ElementRef<typeof SelectPrimitive.ScrollUpButton>> }) {
+function SelectScrollUpButton({ ref, className, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollUpButton> & { ref?: React.RefObject<React.ElementRef<typeof SelectPrimitive.ScrollUpButton>> }) {
   return (
     <SelectPrimitive.ScrollUpButton
       ref={ref}
@@ -45,7 +45,7 @@ function SelectScrollUpButton({ ref, className, ...props }: React.ComponentProps
 }
 SelectScrollUpButton.displayName = SelectPrimitive.ScrollUpButton.displayName
 
-function SelectScrollDownButton({ ref, className, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton> & { ref: React.RefObject<React.ElementRef<typeof SelectPrimitive.ScrollDownButton>> }) {
+function SelectScrollDownButton({ ref, className, ...props }: React.ComponentPropsWithoutRef<typeof SelectPrimitive.ScrollDownButton> & { ref?: React.RefObject<React.ElementRef<typeof SelectPrimitive.ScrollDownButton>> }) {
   return (
     <SelectPrimitive.ScrollDownButton
       ref={ref}
