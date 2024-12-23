@@ -99,7 +99,7 @@ export function ProjectInfo({ selectedFont }: Props) {
           </div>
 
           <p className="text-gray-300 text-sm font-light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus eu efficitur lacus. Nunc dapibus aliquam odio, lacinia tempor arcu. Mauris vel venenatis metus.</p>
-          <Button className="rounded-full bg-white text-black">Get akuru membership</Button>
+          <Button className="rounded-full bg-white text-black hover:bg-white">Get akuru membership</Button>
         </div>
 
       </div>
