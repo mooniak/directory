@@ -13,7 +13,7 @@ export function Footer({ isPage }: footerProps) {
       {!isPage && (
         <div className="text-[60px] pb-10 text-center font-AbhayaLibre">෴</div>
       )}
-      <Separator />
+      <Separator className="bg-black" />
       <div className="grid lg:grid-rows-3 grid-rows-4 lg:grid-cols-12 grid-cols-8 max-lg:pt-5">
         <Link
           to="/"
@@ -58,7 +58,7 @@ export function Footer({ isPage }: footerProps) {
         </div>
 
         <div className="md:col-start-10 md:col-end-13 md:row-start-2 sm:col-start-5 lg:col-start-12 lg:col-end-13 lg:row-start-2 sm:col-end-7 md:row-end-3 text-end col-start-6 col-end-9">
-          <Separator className="lg:hidden block" />
+          <Separator className="lg:hidden block " />
           <div className="flex items-center gap-1 md:justify-end">
             <SocialMediaIcon />
           </div>
