@@ -28,62 +28,65 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
         <FontInformation selectedFont={selectedFont} />
       </div>
 
-      <div className="h-full xl:container">
-        <div className=" pt-10 pb-10 hidden md:block">
-          <div className="flex items-center">
-            <span className="pr-[170px] flex items-center">
-              Style :
-              <div className="pl-2">
-                <Select
-                  onValueChange={(value) => {
-                    setValue(value)
-                  }}
-                >
-                  <SelectTrigger className="w-[170px]">
-                    <SelectValue placeholder="Font Weight" />
-                  </SelectTrigger>
-                  <SelectContent>
-                    {FONT_SIZES.map(font => (
-                      <SelectItem key={font.value} value={String(font.value)}>
-                        {font.label}
-                      </SelectItem>
-                    ))}
-                  </SelectContent>
-                </Select>
-              </div>
-            </span>
-
-            <Button
-              variant="ghost"
-              onClick={() => {
-                setIsShowSlider(prevState => !prevState)
-              }}
-            >
-
-              Size :
-              {' '}
-              {isFontSize}
-              px
-            </Button>
-
-            <div className="w-[290px] pl-5">
-              {isShowSlider && (
-                <Slider
-                  defaultValue={[isFontSize ?? 200]}
-                  max={200}
-                  min={40}
-                  step={1}
-                  onValueChange={(size) => {
-                    setIsFontSize(Number(size))
-                  }}
-                  onBlur={() => {
-                    setIsShowSlider(false)
-                  }}
-                />
-              )}
-            </div>
-          </div>
+      <div className=" hidden md:flex my-8 gap-4 items-center">
+        <div>
+          <Select
+            onValueChange={(value) => {
+              setValue(value)
+            }}
+          >
+            <SelectTrigger className=" rounded-lg flex focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none focus:ring-offset-0  focus:ring-0 border-black justify-center items-center w-36 [&>span]:text-sm [&>svg]:hidden">
+              <span className="">
+                <span className="text-neutral-600">Style</span>
+                {' '}
+                <span>:</span>
+                {' '}
+                <SelectValue placeholder="Font Weight" />
+              </span>
+            </SelectTrigger>
+            <SelectContent>
+              {FONT_SIZES.map(font => (
+                <SelectItem key={font.value} value={String(font.value)}>
+                  {font.label}
+                </SelectItem>
+              ))}
+            </SelectContent>
+          </Select>
         </div>
+        <div>
+          <Button
+            className="w-36 border-black rounded-lg"
+            variant="outline"
+            onClick={() => {
+              setIsShowSlider(prevState => !prevState)
+            }}
+          >
+            {' '}
+            Size :
+            {' '}
+            {isFontSize}
+            px
+          </Button>
+        </div>
+        <div className="w-[290px] pl-5">
+          {isShowSlider && (
+            <Slider
+              defaultValue={[isFontSize ?? 200]}
+              max={200}
+              min={40}
+              step={1}
+              onValueChange={(size) => {
+                setIsFontSize(Number(size))
+              }}
+              onBlur={() => {
+                setIsShowSlider(false)
+              }}
+            />
+          )}
+        </div>
+      </div>
+
+      <div className="h-full xl:container">
 
         <span
           className="font-normal pt-10 hidden md:block"
