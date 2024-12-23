@@ -90,7 +90,7 @@ export function FontRowView() {
               <Button
                 variant="link"
                 onClick={() => {
-                  navigate(`/fonts/${font.fontName}/`)
+                  navigate(`/view_font/${font.fontName}`)
                 }}
               >
                 tap to see more
@@ -131,7 +131,7 @@ export function FontRowView() {
                     className={`${buttonClass}  `}
                     variant="ghost"
                     onClick={() => {
-                      navigate(`/fonts/${font.fontName}/`)
+                      navigate(`/view_font/${font.fontName}`)
                     }}
                   >
                     Test & See More
