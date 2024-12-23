@@ -2,6 +2,7 @@ import { FONT_SIZES } from '@app/config'
 import { Footer } from '@modules/app/Footer'
 import { Header } from '@modules/app/Header'
 import { data, fontWeights } from '@modules/fonts/data/fontData'
+import { ProjectInfo } from '@modules/fonts/data/ProjectInfo'
 import { FontInformation } from '@modules/fonts/FontInformation'
 import { WeightAndStyle } from '@modules/fonts/WeightAndStyle'
 import { Button } from '@modules/shared/components/ui/button'
@@ -147,108 +148,7 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
 
       <Separator className="max-xl:container bg-black" />
 
-      <div className="grid lg:grid-cols-2 lg:gap-20 pt-16 pb-16 xl:container ">
-        <div>
-          <div className="sm:pb-16 pb-2">
-            <span className="font-bold text-[22px] ">Details </span>
-          </div>
-
-          <Separator className="sm:block hidden" />
-
-          <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">Font Name &nbsp;&nbsp;</span>
-            <span>{selectedFont?.fontName}</span>
-          </div>
-
-          <Separator />
-
-          <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">Designers &nbsp;&nbsp;&nbsp;</span>
-            <span>
-              Mooniak
-              {' '}
-              <br />
-              {selectedFont?.owner}
-            </span>
-          </div>
-
-          <Separator />
-
-          <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">
-              Scripts &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp; &nbsp;
-            </span>
-            <span>{selectedFont?.lang}</span>
-          </div>
-
-          <Separator />
-
-          <div className="flex items-center gap-9 pt-8 pb-8">
-            <span className="font-bold">
-              License &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </span>
-            <span>OFL</span>
-          </div>
-
-          <Separator />
-        </div>
-
-        <div>
-          <div className="pb-14 lg:pt-0 pt-10">
-            <span className="font-bold text-[22px] "> About</span>
-          </div>
-
-          <p className="w-[90%] text-[20px]">
-            With a global view and local roots, Mooniak specializes in producing
-            multi-script fonts and typography for Lankan audiences in Sinhala,
-            Tamil, and English languages. In addition to incubating and
-            releasing open-source fonts, we also provide custom typeface design,
-            logotype design, lettering, and editorial design services for select
-            clients. Almost all of Mooniak&apos;s work is published under
-            Libre/Open source licenses. We take pride in building a thriving
-            community of letter form lovers in Sri Lanka, and with a small team
-            of full-timers and collaborators from all around the world, we are
-            advancing the Lankan visual identity.
-          </p>
-        </div>
-      </div>
-
-      <Separator className="bg-black" />
-
-      <div className="pt-16 xl:container">
-        <span className="font-bold text-[20px]">Glyphs</span>
-
-        <div
-          className="w-auto pt-16  lg:w-[50%]"
-          style={{
-            fontFamily: selectedFont?.fontFamily,
-          }}
-        >
-          <span
-            style={{
-              fontSize: 'clamp(40px, 3vw, 60px)',
-            }}
-          >
-            A B C D E F G H I J K L M N O P Q R S T U V W X Y Z
-          </span>
-          <br />
-          <span
-            style={{
-              fontSize: 'clamp(40px, 3vw, 60px)',
-            }}
-          >
-            a b c d e f g h i j k l m n o p q r s t u v w x y z
-          </span>
-          <br />
-          <span
-            style={{
-              fontSize: 'clamp(40px, 3vw, 60px)',
-            }}
-          >
-            0 1 2 3 4 5 6 7 8 9
-          </span>
-        </div>
-      </div>
+      <ProjectInfo selectedFont={selectedFont} />
 
       <Footer />
     </div>
