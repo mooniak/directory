@@ -2,7 +2,7 @@ import { FONT_SIZES } from '@app/config'
 import { Footer } from '@modules/app/Footer'
 import { Header } from '@modules/app/Header'
 import { data, fontWeights } from '@modules/fonts/data/fontData'
-import { SingleFontInfo } from '@modules/fonts/SingleFontInfo'
+import { FontInformation } from '@modules/fonts/FontInformation'
 import { WeightAndStyle } from '@modules/fonts/WeightAndStyle'
 import { Button } from '@modules/shared/components/ui/button'
 import { Input } from '@modules/shared/components/ui/input'
@@ -24,7 +24,9 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
   return (
     <div className="max-xl:container xl:pl-[5%] xl:pr-[5%]">
       <Header />
-      <SingleFontInfo singleFontData={selectedFont} />
+      <div className="flex flex-col gap-6">
+        <FontInformation selectedFont={selectedFont} />
+      </div>
 
       <div className="h-full xl:container">
         <div className=" pt-10 pb-10 hidden md:block">
