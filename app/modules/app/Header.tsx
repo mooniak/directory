@@ -18,7 +18,7 @@ export function Header() {
           to="/"
           className="col-start-1 col-end-2  text-start text-3xl font-bold font-SpaceGrotesk"
         >
-          Mooniak
+          <img src="/app/logo.svg" />
         </Link>
 
         <div className="col-start-12 col-end-13  col-span-1 bg-white h-[42px] text-center justify-end  flex items-center sm:hidden">
