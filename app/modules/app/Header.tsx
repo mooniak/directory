@@ -16,7 +16,7 @@ export function Header() {
         {/* Logo */}
         <Link
           to="/"
-          className="col-start-1 col-end-2 text-start text-3xl font-bold font-SpaceGrotesk"
+          className="col-start-1 col-end-2 text-start text-3xl font-bold font-space-grotesk"
         >
           <img src="/app/logo.svg" alt="Logo" />
         </Link>

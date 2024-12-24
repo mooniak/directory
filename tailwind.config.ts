@@ -36,7 +36,7 @@ const config = {
       '15vw': '15vw',
     },
     fontFamily: {
-      SpaceGrotesk: ['Space Grotesk', 'sans-serif'],
+      'space-grotesk': ['Space Grotesk', 'sans-serif'],
     },
     extend: {
       lineHeight: {

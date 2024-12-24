@@ -17,7 +17,7 @@ export function Footer({ isPage }: footerProps) {
       <div className="grid lg:grid-rows-3 grid-rows-4 lg:grid-cols-12 grid-cols-8 max-lg:pt-5">
         <Link
           to="/"
-          className="lg:col-start-1 lg:col-end-5 row-start-1 lg:row-start-2 text-3xl font-bold text-start col-start-1 col-end-2 font-SpaceGrotesk"
+          className="lg:col-start-1 lg:col-end-5 row-start-1 lg:row-start-2 text-3xl font-bold text-start col-start-1 col-end-2 font-space-grotesk"
         >
           Mooniak
         </Link>

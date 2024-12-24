@@ -10,7 +10,7 @@ export default function Home() {
         <Header />
         <div className="">
           <div className="flex my-20">
-            <h1 className=" w-3/5 xl:w-1/2 text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[12rem] text-start leading-none font-bold md:font-semibold xl:leading-[13rem]">
+            <h1 className=" w-3/5 xl:w-1/2 font-space-grotesk text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[12rem] text-start leading-none font-bold md:font-bold xl:leading-[13rem]">
               Existing
               <br />
               Font
