@@ -92,6 +92,21 @@ export function FontRowView() {
                 {font.fontName}
               </div>
             </div>
+            <div className=" lg:hidden grid grid-cols-2 text-start items-center pt-2">
+              <div className="text-start flex items-center gap-4">
+                <span>අ &nbsp; A</span>
+                <Separator orientation="vertical" className="h-4" />
+                <span>2 Styles </span>
+              </div>
+              <Button
+                variant="link"
+                onClick={() => {
+                  navigate(`/fonts/${font.fontName}/`)
+                }}
+              >
+                tap to see more
+              </Button>
+            </div>
           </div>
 
           <div
