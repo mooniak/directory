@@ -3,13 +3,11 @@ import { GetTheFontDialog } from '@modules/home/GetTheFontDialog'
 import { Button } from '@modules/shared/components/ui/button'
 
 import { Separator } from '@modules/shared/components/ui/separator'
-import { ArrowRight } from 'lucide-react'
+import { Github, User } from 'lucide-react'
 import { useState } from 'react'
 import { useNavigate } from 'react-router'
 
 export function FontRowView() {
-  const buttonClass
-    = 'w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full'
   const [isDialogOpen, setIsDialogOpen] = useState(false)
   const [showSeparators, setShowSeparators] = useState(
     Array.from({ length: data.length }).fill(false),
@@ -37,37 +35,50 @@ export function FontRowView() {
             })
           }}
         >
-          <div className="xl:container">
+          <div className="max-xl:container">
             <div className="grid lg:grid-cols-6 grid-cols-2 items-center w-fulll lg:pt-10 pt-5">
               <div
                 className={`lg:col-start-1 lg:col-span-1 text-left  items-center hidden lg:block ${showSeparators[index] ? '-translate-y-2  duration-500' : 'translate-y-2  duration-500'} `}
               >
-                <div className="grid grid-cols-2  grid-rows-4 lg:w-[270px] xl:w-[366px]">
-                  <div className="col-span-2  h-10 ">
+                <div className="grid grid-cols-2 lg:w-[270px] xl:w-[366px]">
+                  <div className="col-span-2 border-b py-2">
                     <span className="font-bold sm:text-[18px] text-[50px] ">
                       {font.fontName}
                     </span>
                     <br />
                     <span className="text-gray-500 text-sm ">
                       {font.version}
-                      <Separator />
                     </span>
                   </div>
 
-                  <div className="col-span-1 mt-3">
+                  <div className=" border-b py-2">
                     {font.lang}
-                    <Separator />
                   </div>
-                  <div className="col-span-1 h-6 mt-3">
+                  <div className=" border-b py-2">
                     2 Styles
-                    <Separator />
                   </div>
-                  <div className="col-span-2 mt-0.5">
+                  <div className="col-span-2 border-b py-2">
                     {font.owner}
                     , Mooniak
-                    <Separator />
                   </div>
-                  <div className="col-span-2 mt-[-5px]">{font.site}</div>
+                  <div className="col-span-2 py-2">{font.site}</div>
+                  <div className="col-span-2 ">
+                    <p className="bg-black text-white rounded-md px-4 py-1 font-light">Active development</p>
+                    <div className={`flex py-3 ${showSeparators[index] ? 'border-b' : ''}`}>
+                      <p className="basis-1/2 flex gap-4">
+                        <Github absoluteStrokeWidth className="text-black" />
+                        <span>
+                          32 Issues
+                        </span>
+                      </p>
+                      <p className="basis-1/2 flex gap-4">
+                        <User className="text-black" absoluteStrokeWidth />
+                        <span className="">
+                          43 contributors
+                        </span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -81,41 +92,25 @@ export function FontRowView() {
                 {font.fontName}
               </div>
             </div>
-            <div className=" lg:hidden grid grid-cols-2 text-start items-center pt-2">
-              <div className="text-start flex items-center gap-4">
-                <span>අ &nbsp; A</span>
-                <Separator orientation="vertical" className="h-4" />
-                <span>2 Styles </span>
-              </div>
-              <Button
-                variant="link"
-                onClick={() => {
-                  navigate(`/view_font/${font.fontName}`)
-                }}
-              >
-                tap to see more
-              </Button>
-            </div>
           </div>
 
           <div
-            className={` xl:container hidden lg:block ${showSeparators[index] ? ' lg:transition-opacity duration-700 ease-out opacity-100 ' : 'lg:transition-opacity duration-700 ease-out opacity-0'}`}
+            className={` max-xl:container hidden lg:block ${showSeparators[index] ? ' lg:transition-opacity duration-700 ease-out opacity-100 ' : 'lg:transition-opacity duration-700 ease-out opacity-0'}`}
           >
             <div>
-              <Separator />
 
-              <div className="flex mt-[20px] pb-[30px] gap-5">
+              <div className="flex mt-[20px] pb-[30px]">
                 <div className="gap-5 flex">
                   <Button
-                    className={`${buttonClass} `}
-                    variant="ghost"
+                    className="border-black rounded-full hover:bg-black hover:text-white"
+                    variant="outline"
                     onClick={() => {
-                      setIsDialogOpen(true)
+                      navigate(`/view_font/${font.fontName}`)
                     }}
                   >
-                    Get the Font
+                    Test and Download
                   </Button>
-                  <Button className={`${buttonClass} `} variant="ghost">
+                  <Button variant="outline" className="border-black rounded-full hover:bg-black hover:text-white">
                     Dev Version
                   </Button>
                 </div>
@@ -124,19 +119,6 @@ export function FontRowView() {
                   isDialogOpen={isDialogOpen}
                   setIsDialogOpen={setIsDialogOpen}
                 />
-
-                <div className="flex items-center gap-2 ml-[150px] ">
-                  <ArrowRight />
-                  <Button
-                    className={`${buttonClass}  `}
-                    variant="ghost"
-                    onClick={() => {
-                      navigate(`/view_font/${font.fontName}`)
-                    }}
-                  >
-                    Test & See More
-                  </Button>
-                </div>
               </div>
             </div>
           </div>
