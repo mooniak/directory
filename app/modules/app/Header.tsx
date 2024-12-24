@@ -12,7 +12,7 @@ export function Header() {
 
   return (
     <div className="w-full border-b border-black h-[60px] flex items-center">
-      <div className="grid grid-cols-12 gap-4 items-center w-full">
+      <div className="grid grid-cols-12 items-center w-full">
         {/* Logo */}
         <Link
           to="/"
