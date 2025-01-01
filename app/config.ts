@@ -2,7 +2,7 @@ export const PHONE_NO = '077 123 4567'
 export const EMAIL = 'hello@mooniak.com'
 export const FONT_SIZES = [{
   label: 'Light',
-  value: 300,
+  value: 100,
 }, {
   label: 'Regular',
   value: 400,
@@ -17,5 +17,5 @@ export const FONT_SIZES = [{
   value: 700,
 }, {
   label: 'ExtraBold',
-  value: 800,
+  value: 900,
 }]
