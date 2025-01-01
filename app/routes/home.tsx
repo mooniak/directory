@@ -10,14 +10,14 @@ export default function Home() {
         <Header />
         <div className="">
           <div className="flex my-20">
-            <h1 className=" w-3/5 xl:w-1/2 font-space-grotesk text-[6rem] md:text-[8rem] lg:text-[9rem] xl:text-[12rem] text-start leading-none font-bold md:font-bold xl:leading-[13rem]">
+            <h1 className=" w-4/5 font-space-grotesk text-[6rem] md:text-[10rem] lg:text-[13rem] xl:text-[15rem]  text-start leading-none font-bold md:font-bold xl:tracking-wider xl:leading-[15rem]">
               Existing
               <br />
               Font
               <br />
               Projects
             </h1>
-            <div className=" w-1/2 hidden lg:flex self-end">
+            <div className=" hidden lg:flex self-end">
               <div>
                 <MoveDown size={50} />
               </div>
@@ -25,7 +25,7 @@ export default function Home() {
           </div>
 
           <div className="my-20 flex ">
-            <h2 className="w-3/5 xl:w-1/2 text-start font-sm md:text-xl lg:text-2xl ">
+            <h2 className=" w-4/5 text-start font-sm md:text-xl lg:text-2xl ">
               We are the global leader in Sinhala
               <br />
               typography, advancing Lankan visual identity
@@ -34,7 +34,7 @@ export default function Home() {
               <br />
               respect culture and freedom
             </h2>
-            <div className="w-1/2 hidden lg:flex self-end ">
+            <div className=" hidden lg:flex self-end ">
               <MoveDown size={50} />
             </div>
           </div>
