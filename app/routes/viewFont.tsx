@@ -13,9 +13,9 @@ import { Slider } from '@modules/shared/components/ui/slider'
 import { useState } from 'react'
 
 export default function ViewFont({ params }: { params: { fontName: string } }) {
-  const [isFontSize, setIsFontSize] = useState(200)
+  const [fontSize, setFontSize] = useState(200)
   const [isShowSlider, setIsShowSlider] = useState(false)
-  const [value, setValue] = useState('400')
+  const [fontWeight, setFontWeight] = useState('100')
   const selectedFont = data.find(font => font.fontName === decodeURIComponent(String(params.fontName)))
   const [isInputName, setIsInputName] = useState<string | undefined>(selectedFont?.fontName)
 
@@ -33,7 +33,7 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
         <div>
           <Select
             onValueChange={(value) => {
-              setValue(value)
+              setFontWeight(value)
             }}
           >
             <SelectTrigger className=" rounded-lg flex focus-visible:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none focus:ring-offset-0  focus:ring-0 border-black justify-center items-center w-36 [&>span]:text-sm [&>svg]:hidden">
@@ -65,19 +65,19 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
             {' '}
             Size :
             {' '}
-            {isFontSize}
+            {fontSize}
             px
           </Button>
         </div>
         <div className="w-[290px] pl-5">
           {isShowSlider && (
             <Slider
-              defaultValue={[isFontSize ?? 200]}
+              defaultValue={[fontSize ?? 200]}
               max={200}
               min={40}
               step={1}
               onValueChange={(size) => {
-                setIsFontSize(Number(size))
+                setFontSize(Number(size))
               }}
               onBlur={() => {
                 setIsShowSlider(false)
@@ -92,8 +92,8 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
         <span
           className="font-normal pt-10 hidden md:block"
           style={{
-            fontWeight: value,
-            fontSize: isFontSize,
+            fontWeight,
+            fontSize,
             fontFamily: selectedFont?.fontFamily,
           }}
         >
@@ -103,7 +103,7 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
             style={{
               outlineColor: 'transparent',
               outline: 'none',
-              fontSize: isFontSize,
+              fontSize,
               fontFamily: selectedFont?.fontFamily,
             }}
             onChange={(event: {

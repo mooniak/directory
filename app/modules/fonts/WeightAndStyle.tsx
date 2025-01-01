@@ -23,7 +23,7 @@ export function WeightAndStyle({
           <span
             className="hidden sm:block"
             style={{
-              fontSize: 40,
+              fontSize: 70,
               fontFamily: String(fontFamily),
               fontWeight: font.size,
             }}

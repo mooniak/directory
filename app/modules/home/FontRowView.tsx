@@ -86,7 +86,7 @@ export function FontRowView() {
                 className={`lg:col-start-3  lg:col-end-7 l col-start-1 text-start col-span-2 ${showSeparators[index] ? 'lg:-translate-y-2 duration-500' : 'lg:translate-y-2 duration-500'}`}
                 style={{
                   fontFamily: font.fontFamily || 'inherit',
-                  fontSize: 'clamp(50px, 6.763vw, 125px)',
+                  fontSize: 'clamp(50px, 9vw, 160px)',
                 }}
               >
                 {font.fontName}
