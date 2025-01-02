@@ -4,20 +4,59 @@
 @tailwind components;
 @tailwind utilities;
 
-html,
-body {
-  @apply bg-white dark:bg-gray-950;
+@font-face {
+  font-family: 'Space Grotesk';
+  font-style: normal;
+  src: url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
+}
 
-  @media (prefers-color-scheme: dark) {
-    color-scheme: dark;
-  }
+@font-face {
+  font-family: 'Stick No Bills';
+  font-style: normal;
+  src: url('../public/fonts/StickNoBills-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'AbhayaLibre';
+  font-style: normal;
+  src: url('../public/fonts/AbhayaLibre-Medium.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Yaldevi';
+  font-style: normal;
+  src: url('../public/fonts/Yaldevi-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Whisper';
+  font-style: normal;
+  src: url('../public/fonts/Whisper-Regular.ttf') format('truetype');
+}
 
-  html {
-    font-family: 'Inter', serif;
-  }
+@font-face {
+  font-family: 'Noto Serif Sinhala';
+  font-style: normal;
+  src: url('../public/fonts/NotoSerifSinhala-VariableFont_wdth,wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Madimi One';
+  font-style: normal;
+  src: url('../public/fonts/MadimiOne-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Caveat';
+  font-style: normal;
+  src: url('../public/fonts/Caveat-VariableFont_wght.ttf') format('truetype');
+}
+@font-face {
+  font-family: 'Mansalva';
+  font-style: normal;
+  src: url('../public/fonts/Mansalva-Regular.ttf') format('truetype');
 }
 
 @layer base {
+  html {
+    font-family: Inter, system-ui, sans-serif;
+  }
+
   :root {
     --background: 0 0% 100%;
     --foreground: 0 0% 3.9%;
