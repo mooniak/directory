@@ -11,7 +11,7 @@ export default function Home() {
         <div className="">
           <div className="flex my-20">
             <h1 className=" w-4/5 font-space-grotesk text-[6rem] md:text-[10rem] lg:text-[13rem] xl:text-[15rem]  text-start leading-none font-bold md:font-bold xl:tracking-wider xl:leading-[15rem]">
-              Existing
+              Exciting
               <br />
               Font
               <br />
