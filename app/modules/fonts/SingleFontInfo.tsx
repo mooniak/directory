@@ -54,9 +54,11 @@ export function SingleFontInfo({ singleFontData }: singleFontInfoProps) {
               </span>
             </div>
             <div className="hidden lg:block">
-              <Button className={`${buttonClass} ml-8`} variant="ghost">
-                Get the Font
-              </Button>
+              <a href={`${singleFontData?.repoURL}/releases`} target="_blank" rel="noopener noreferrer">
+                <Button className={`${buttonClass} ml-8`} variant="ghost">
+                  Get the Font
+                </Button>
+              </a>
             </div>
           </div>
           <div className="lg:col-start-4 lg:col-end-5 sm:col-start-4 sm:col-end-6 col-start-6 col-end-7 hidden sm:block pt-8">

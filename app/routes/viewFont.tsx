@@ -215,9 +215,11 @@ export default function ViewFont({ params }: { params: { slug: string } }) {
       </div>
 
       <div className="lg:hidden block pb-10 ">
-        <Button className={`${buttonClass} `} variant="ghost">
-          Get the Font
-        </Button>
+        <a href={`${fontProject.repoURL}/releases`} target="_blank" rel="noopener noreferrer">
+          <Button className={`${buttonClass} `} variant="ghost">
+            Get the Font
+          </Button>
+        </a>
       </div>
 
       <Separator className="bg-black" />

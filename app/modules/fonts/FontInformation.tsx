@@ -7,6 +7,7 @@ interface FontProject {
   version: string
   scripts: string
   license: string
+  repoURL?: string
   designers: Array<{
     id: string
     name: string
@@ -65,9 +66,11 @@ export function FontInformation({ selectedFont }: FontInformationProps) {
             </div>
           </div>
           <div className=" flex-none hidden md:block ">
-            <Button className={`${buttonClass} ml-8`} variant="ghost">
-              Get the Font
-            </Button>
+            <a href={`${selectedFont?.repoURL}/releases`} target="_blank" rel="noopener noreferrer">
+              <Button className={`${buttonClass} ml-8`} variant="ghost">
+                Get the Font
+              </Button>
+            </a>
           </div>
         </div>
       </div>

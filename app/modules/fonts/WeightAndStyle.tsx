@@ -11,6 +11,7 @@ interface WeightsAndStylesProps {
   readonly fontWeights: FontStyle[]
   readonly isInputName?: string
   readonly fontName?: string
+  readonly fontFamily?: string
 }
 
 export function WeightAndStyle({

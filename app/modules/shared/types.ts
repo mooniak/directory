@@ -4,6 +4,7 @@ export interface FontInfo {
   lang: string
   owner: string
   site: string
+  repoURL?: string
   fontFamily: string
 }
 
