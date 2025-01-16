@@ -1,14 +1,26 @@
-import type { FontInfo } from '@modules/shared/types'
 import { Button } from '@modules/shared/components/ui/button'
 import { ArrowLeft } from 'lucide-react'
 import { useNavigate } from 'react-router'
 
-interface singleFontInfoProps {
-  readonly selectedFont?: FontInfo
+interface FontProject {
+  fontName: string
+  version: string
+  scripts: string
+  license: string
+  designers: Array<{
+    id: string
+    name: string
+    email: string | null
+    url: string | null
+  }>
 }
-export function FontInformation({ selectedFont }: singleFontInfoProps) {
-  const buttonClass
-        = 'w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full'
+
+interface FontInformationProps {
+  readonly selectedFont?: FontProject
+}
+
+export function FontInformation({ selectedFont }: FontInformationProps) {
+  const buttonClass = 'w-[135px] h-[37px] border bg-white hover:bg-black hover:text-white p-2 rounded-full'
   const navigate = useNavigate()
 
   return (
@@ -39,21 +51,16 @@ export function FontInformation({ selectedFont }: singleFontInfoProps) {
           <div className="flex gap-20  xl:flex-[0.8]">
             <div className="flex flex-col w-fit">
               <p className="font-semibold text-sm">Scripts</p>
-              <span className="font-semibold text-sm ">{selectedFont?.lang}</span>
+              <span className="font-semibold text-sm ">{selectedFont?.scripts}</span>
             </div>
             <div className="flex flex-col">
-              <p className="font-semibold text-sm">Lisance</p>
-              <span className="font-semibold">OFL</span>
+              <p className="font-semibold text-sm">License</p>
+              <span className="font-semibold">{selectedFont?.license}</span>
             </div>
             <div className="flex flex-col ">
-              <p className="font-semibold text-sm">designer</p>
-              <span
-                onClick={() => {
-                  navigate(`/foundry/${selectedFont?.owner}`)
-                }}
-                className="font-semibold cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
-              >
-                {selectedFont?.owner}
+              <p className="font-semibold text-sm">Designer(s)</p>
+              <span className="font-semibold">
+                {selectedFont?.designers.map(d => d.name).join(', ')}
               </span>
             </div>
           </div>

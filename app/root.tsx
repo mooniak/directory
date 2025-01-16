@@ -1,14 +1,29 @@
 import type { Route } from './+types/root'
 
-import {
-  isRouteErrorResponse,
-  Links,
-  Meta,
-  Outlet,
-  Scripts,
-  ScrollRestoration,
-} from 'react-router'
+import { json } from '@remix-run/router'
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query'
+import { isRouteErrorResponse, Links, Meta, Outlet, Scripts, ScrollRestoration, useLoaderData } from 'react-router'
 import stylesheet from './app.css?url'
+
+// Create a client
+const queryClient = new QueryClient()
+
+interface LoaderData {
+  ENV: {
+    API_BASE_URL: string
+    ORGANIZATION_ID: string
+  }
+}
+
+export async function loader() {
+  const data: LoaderData = {
+    ENV: {
+      API_BASE_URL: import.meta.env.VITE_API_BASE_URL,
+      ORGANIZATION_ID: import.meta.env.VITE_ORGANIZATION_ID,
+    },
+  }
+  return json(data)
+}
 
 export const links: Route.LinksFunction = () => [
   { rel: 'preconnect', href: 'https://fonts.googleapis.com' },
@@ -25,6 +40,8 @@ export const links: Route.LinksFunction = () => [
 ]
 
 export function Layout({ children }: { children: React.ReactNode }) {
+  const data = useLoaderData() as LoaderData
+
   return (
     <html lang="en">
       <head>
@@ -34,9 +51,16 @@ export function Layout({ children }: { children: React.ReactNode }) {
         <Links />
       </head>
       <body>
-        {children}
+        <QueryClientProvider client={queryClient}>
+          {children}
+        </QueryClientProvider>
         <ScrollRestoration />
         <Scripts />
+        <script
+          dangerouslySetInnerHTML={{
+            __html: `window.ENV = ${JSON.stringify(data.ENV)}`,
+          }}
+        />
       </body>
     </html>
   )
