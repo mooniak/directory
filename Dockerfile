@@ -1,4 +1,4 @@
-FROM node:20-alpine AS development-dependencies-env
+FROM node:22-alpine AS development-dependencies-env
 
 # Install pnpm with specific version
 RUN corepack enable && corepack prepare pnpm@8.15.1 --activate

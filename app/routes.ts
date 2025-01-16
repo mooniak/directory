@@ -5,6 +5,6 @@ export default [
   route('about', 'routes/about.tsx'),
   route('contact', 'routes/contact.tsx'),
   route('community', 'routes/community.tsx'),
-  route('view_font/:fontName', 'routes/viewFont.tsx'),
+  route('view_font/:slug', 'routes/viewFont.tsx'),
   route('foundry/:name', 'routes/fontFoundry.tsx'),
 ] satisfies RouteConfig

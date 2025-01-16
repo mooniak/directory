@@ -1,15 +1,20 @@
-import type { FontWeights } from '@modules/shared/types'
+interface FontStyle {
+  id: string
+  name: string
+  weight: number
+  style: string
+  fontUrl: string
+  version: string
+}
 
 interface WeightsAndStylesProps {
-  readonly fontWeights: FontWeights[]
-  readonly fontFamily?: string
+  readonly fontWeights: FontStyle[]
   readonly isInputName?: string
   readonly fontName?: string
 }
 
 export function WeightAndStyle({
   fontWeights,
-  fontFamily,
   isInputName,
   fontName,
 }: WeightsAndStylesProps) {
@@ -18,14 +23,15 @@ export function WeightAndStyle({
       <div className=" sm:pb-0 pb-10">
         <span className="font-bold ">Weights & Styles </span>
       </div>
-      {fontWeights?.map((font, index) => (
-        <div key={font.size} className={`sm:pt-10 pt-1 ${index !== fontWeights.length - 1 ? 'border-b' : ''}`}>
+      {fontWeights?.map((style, index) => (
+        <div key={style.id} className={`sm:pt-10 pt-1 ${index !== fontWeights.length - 1 ? 'border-b' : ''}`}>
           <span
             className="hidden sm:block"
             style={{
               fontSize: 70,
-              fontFamily: String(fontFamily),
-              fontWeight: font.size,
+              fontFamily: style.name,
+              fontWeight: style.weight,
+              fontStyle: style.style,
             }}
           >
             {isInputName !== fontName
@@ -33,7 +39,7 @@ export function WeightAndStyle({
               : 'Jazzed foxes quickly vexed my big brown dog'}
           </span>
           <span className="md:hidden block font-bold text-[15px] ">
-            {font.size}
+            {style.weight}
             {' '}
           </span>
 
@@ -41,18 +47,19 @@ export function WeightAndStyle({
             className="sm:hidden block"
             style={{
               fontSize: 40,
-              fontFamily: String(fontFamily),
-              fontWeight: font.size,
+              fontFamily: style.name,
+              fontWeight: style.weight,
+              fontStyle: style.style,
             }}
           >
-            {font.name}
+            {style.name}
           </span>
           <br />
           <div className="items-center gap-8 font-bold text-[15px] pb-8 pt-5 hidden md:block">
-            <span>{font.size}</span>
+            <span>{style.weight}</span>
             {' '}
               &nbsp;&nbsp;&nbsp;
-            <span>{font.className}</span>
+            <span>{style.name}</span>
           </div>
         </div>
       ))}

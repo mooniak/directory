@@ -4,13 +4,13 @@
 @tailwind components;
 @tailwind utilities;
 
-@font-face {
+/* @font-face {
   font-family: 'Space Grotesk';
   font-style: normal;
   src: url('../public/fonts/SpaceGrotesk-VariableFont_wght.ttf') format('truetype');
-}
+} */
 
-@font-face {
+/* @font-face {
   font-family: 'Stick No Bills';
   font-style: normal;
   src: url('../public/fonts/StickNoBills-VariableFont_wght.ttf') format('truetype');
@@ -50,7 +50,7 @@
   font-family: 'Mansalva';
   font-style: normal;
   src: url('../public/fonts/Mansalva-Regular.ttf') format('truetype');
-}
+} */
 
 @layer base {
   html {

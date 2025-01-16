@@ -39,7 +39,7 @@ export function Footer({ isPage }: footerProps) {
           </Link>
           <Link
             className="col-span-1 md:col-start-1 col-start-1 col-end-3  cursor-pointer hover:underline mt-2"
-            to="/about/"
+            to="/"
           >
             About
           </Link>

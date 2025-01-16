@@ -1,99 +1,114 @@
-export const data = [
+interface FontData {
+  fontName: string
+  version: string
+  scripts: string
+  designerNames: string
+  repoURL: string
+  fontFamily: string
+}
+
+export const data: FontData[] = [
   {
     fontName: 'Abhaya Libre',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'AbhayaLibre',
   },
   {
     fontName: 'යාල්දේවි',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Yaldevi',
   },
   {
     fontName: 'Stick No Bills',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Stick No Bills',
   },
   {
     fontName: 'Whisper',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Whisper',
   },
   {
     fontName: 'සයලම',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Noto Serif Sinhala',
   },
   {
     fontName: 'Madimi One',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Madimi One',
   },
   {
     fontName: 'Caveat',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Caveat',
   },
   {
     fontName: 'Mansalva',
     version: 'v1.600 ',
-    lang: 'Latin, Sinhala',
-    owner: 'Pushpananda Ekanayak',
-    site: 'Libre Font',
+    scripts: 'Latin, Sinhala',
+    designerNames: 'Pushpananda Ekanayak',
+    repoURL: 'Libre Font',
     fontFamily: 'Mansalva',
   },
 ]
 
-export const fontWeights = [
+interface FontStyle {
+  className: string
+  fontWeight: string
+  fontWeightName: string
+}
+
+export const fontStyles: FontStyle[] = [
   {
     className: 'extralight',
-    size: '200',
-    name: 'Extra light',
+    fontWeight: '200',
+    fontWeightName: 'Extra light',
   },
   {
     className: 'light',
-    size: '300',
-    name: 'light',
+    fontWeight: '300',
+    fontWeightName: 'light',
   },
   {
     className: 'normal',
-    size: '400',
-    name: 'Normal',
+    fontWeight: '400',
+    fontWeightName: 'Normal',
   },
   {
     className: 'font-medium',
-    size: '500',
-    name: 'Medium',
+    fontWeight: '500',
+    fontWeightName: 'Medium',
   },
   {
     className: 'semibold',
-    size: '600',
-    name: 'Semibold',
+    fontWeight: '600',
+    fontWeightName: 'Semibold',
   },
   {
     className: 'bold',
-    size: '700',
-    name: 'Bold',
+    fontWeight: '700',
+    fontWeightName: 'Bold',
   },
 ]
