@@ -14,7 +14,6 @@ import { useState } from 'react'
 
 export default function ViewFont({ params }: { params: { fontName: string } }) {
   const [fontSize, setFontSize] = useState(200)
-  const [isShowSlider, setIsShowSlider] = useState(false)
   const [fontWeight, setFontWeight] = useState('100')
   const selectedFont = data.find(font => font.fontName === decodeURIComponent(String(params.fontName)))
   const [isInputName, setIsInputName] = useState<string | undefined>(selectedFont?.fontName)
@@ -42,7 +41,7 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
                 {' '}
                 <span>:</span>
                 {' '}
-                <SelectValue placeholder="Font Weight" />
+                <SelectValue defaultValue={400} placeholder="Reguler" />
               </span>
             </SelectTrigger>
             <SelectContent>
@@ -54,36 +53,20 @@ export default function ViewFont({ params }: { params: { fontName: string } }) {
             </SelectContent>
           </Select>
         </div>
-        <div>
-          <Button
-            className="w-36 border-black rounded-lg"
-            variant="outline"
-            onClick={() => {
-              setIsShowSlider(prevState => !prevState)
+        <div className="w-[290px]">
+          <Slider
+            className="focus:ring-0 focus-visible:ring-offset-0 focus-visible:outline-none focus:ring-offset-0 focus-visible:ring-0"
+            defaultValue={[fontSize ?? 200]}
+            max={200}
+            min={40}
+            step={1}
+            onValueChange={(size) => {
+              setFontSize(Number(size))
             }}
-          >
-            {' '}
-            Size :
-            {' '}
-            {fontSize}
-            px
-          </Button>
+          />
         </div>
-        <div className="w-[290px] pl-5">
-          {isShowSlider && (
-            <Slider
-              defaultValue={[fontSize ?? 200]}
-              max={200}
-              min={40}
-              step={1}
-              onValueChange={(size) => {
-                setFontSize(Number(size))
-              }}
-              onBlur={() => {
-                setIsShowSlider(false)
-              }}
-            />
-          )}
+        <div>
+          {fontSize}
         </div>
       </div>
 

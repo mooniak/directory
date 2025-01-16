@@ -47,7 +47,14 @@ export function FontInformation({ selectedFont }: singleFontInfoProps) {
             </div>
             <div className="flex flex-col ">
               <p className="font-semibold text-sm">designer</p>
-              <span className="font-semibold">{selectedFont?.owner}</span>
+              <span
+                onClick={() => {
+                  navigate(`/foundry/${selectedFont?.owner}`)
+                }}
+                className="font-semibold cursor-pointer transition-transform duration-300 ease-in-out hover:scale-105"
+              >
+                {selectedFont?.owner}
+              </span>
             </div>
           </div>
           <div className=" flex-none hidden md:block ">
