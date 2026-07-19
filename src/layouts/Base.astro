@@ -1,0 +1,56 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title: string;
+  description?: string;
+}
+
+const { title, description = "Sinhala, Tamil and Latin typefaces from mooniak — every font, every stage, one place." } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title}</title>
+    <meta name="description" content={description} />
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="site-title" href="/">mooniak</a>
+      <p class="site-tagline">Sinhala · Tamil · Latin type — every font, every stage</p>
+    </header>
+    <main>
+      <slot />
+    </main>
+    <footer class="site-footer">
+      <p>mooniak type foundry. Fonts marked ★ are licensed — get in touch for use. Everything
+        else is free and open (see each font's license).</p>
+    </footer>
+  </body>
+</html>
+
+<script>
+  // "Try your own text" — delegated on document.body so it works whether this
+  // markup was server-rendered on a standalone /<slug>/ page, or fetched and
+  // injected into the index page's slide-in panel (injected <script> tags
+  // never execute, delegated listeners on an ancestor still see the clicks).
+  document.body.addEventListener("input", (e) => {
+    const input = e.target;
+    if (!(input instanceof HTMLInputElement) || !input.dataset.tryInput) return;
+    // Scope to the enclosing font-detail article, not a page-wide lookup by
+    // slug — the same slug's specimen also renders in the grid card, and a
+    // global querySelector would grab whichever copy comes first in the DOM.
+    const container = input.closest("[data-slug]");
+    const target = container?.querySelector("[data-specimen]");
+    if (!target) return;
+    if (target.dataset.original === undefined) {
+      target.dataset.original = target.textContent || "";
+    }
+    target.textContent = input.value || target.dataset.original;
+  });
+</script>
+

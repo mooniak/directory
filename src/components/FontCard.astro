@@ -1,0 +1,34 @@
+---
+import type { FontEntry } from "../lib/registry";
+import { MATURITY_LABEL, SCRIPT_LABEL } from "../lib/registry";
+import SpecimenPreview from "./SpecimenPreview.astro";
+
+interface Props {
+  font: FontEntry;
+}
+
+const { font } = Astro.props;
+---
+
+<a
+  class="card"
+  href={`/${font.slug}/`}
+  data-card
+  data-slug={font.slug}
+  data-name={font.name.toLowerCase()}
+  data-scripts={font.scripts.join(",")}
+  data-maturity={font.maturity}
+  data-collection={font.collection ?? "other"}
+>
+  <div class="card-specimen">
+    <SpecimenPreview font={font} size="card" />
+  </div>
+  <div class="card-meta">
+    <span class="card-name">{font.name}</span>
+    {font.is_premium && <span class="badge-premium" title="Licensed font">★</span>}
+  </div>
+  <div class="card-tags">
+    {font.scripts.map((s) => <span class="tag">{SCRIPT_LABEL[s] ?? s}</span>)}
+    <span class={`tag tag-maturity tag-${font.maturity}`}>{MATURITY_LABEL[font.maturity]}</span>
+  </div>
+</a>

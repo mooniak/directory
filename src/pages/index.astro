@@ -1,0 +1,143 @@
+---
+import Base from "../layouts/Base.astro";
+import FontCard from "../components/FontCard.astro";
+import { getFonts, MATURITY_LABEL, MATURITY_ORDER, SCRIPT_LABEL } from "../lib/registry";
+
+const fonts = getFonts().sort((a, b) => a.name.localeCompare(b.name));
+const scripts = [...new Set(fonts.flatMap((f) => f.scripts))].sort();
+const maturities = MATURITY_ORDER.filter((m) => fonts.some((f) => f.maturity === m));
+const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort();
+---
+
+<Base
+  title="mooniak — Sinhala, Tamil & Latin type"
+  description="Every mooniak font, every stage — from first sketch to shipped release."
+>
+  <section class="filters" id="filters">
+    <input type="search" id="search" placeholder="Search fonts…" aria-label="Search fonts" />
+    <div class="chip-group" data-filter-group="script">
+      <button class="chip is-active" data-value="">All scripts</button>
+      {scripts.map((s) => <button class="chip" data-value={s}>{SCRIPT_LABEL[s] ?? s}</button>)}
+    </div>
+    <div class="chip-group" data-filter-group="maturity">
+      <button class="chip is-active" data-value="">All stages</button>
+      {maturities.map((m) => <button class="chip" data-value={m}>{MATURITY_LABEL[m]}</button>)}
+    </div>
+    <div class="chip-group" data-filter-group="collection">
+      <button class="chip is-active" data-value="">All collections</button>
+      {collections.map((c) => <button class="chip" data-value={c}>{c === "other" ? "Other" : c}</button>)}
+    </div>
+  </section>
+
+  <p class="result-count" id="result-count">{fonts.length} fonts</p>
+
+  <section class="grid" id="grid">
+    {fonts.map((font) => <FontCard font={font} />)}
+  </section>
+
+  <div class="panel-overlay" id="panel-overlay" hidden></div>
+  <aside class="panel" id="panel" hidden aria-hidden="true">
+    <button class="panel-close" id="panel-close" aria-label="Close">✕</button>
+    <div class="panel-body" id="panel-body"></div>
+  </aside>
+</Base>
+
+<script>
+  const grid = document.getElementById("grid")!;
+  const cards = Array.from(grid.querySelectorAll<HTMLAnchorElement>("[data-card]"));
+  const search = document.getElementById("search") as HTMLInputElement;
+  const resultCount = document.getElementById("result-count")!;
+  const filterGroups = Array.from(document.querySelectorAll<HTMLElement>("[data-filter-group]"));
+  const active: Record<string, string> = { script: "", maturity: "", collection: "" };
+
+  function applyFilters() {
+    const q = search.value.trim().toLowerCase();
+    let shown = 0;
+    for (const card of cards) {
+      const name = card.dataset.name ?? "";
+      const cardScripts = (card.dataset.scripts ?? "").split(",");
+      const matchesQuery = !q || name.includes(q);
+      const matchesScript = !active.script || cardScripts.includes(active.script);
+      const matchesMaturity = !active.maturity || card.dataset.maturity === active.maturity;
+      const matchesCollection = !active.collection || card.dataset.collection === active.collection;
+      const visible = matchesQuery && matchesScript && matchesMaturity && matchesCollection;
+      card.classList.toggle("is-hidden", !visible);
+      if (visible) shown++;
+    }
+    resultCount.textContent = `${shown} font${shown === 1 ? "" : "s"}`;
+  }
+
+  search.addEventListener("input", applyFilters);
+
+  for (const group of filterGroups) {
+    const key = group.dataset.filterGroup as keyof typeof active;
+    group.addEventListener("click", (e) => {
+      const btn = (e.target as HTMLElement).closest<HTMLButtonElement>(".chip");
+      if (!btn) return;
+      active[key] = btn.dataset.value ?? "";
+      for (const chip of group.querySelectorAll(".chip")) chip.classList.toggle("is-active", chip === btn);
+      applyFilters();
+    });
+  }
+
+  // ── Slide-in panel: fetch the static /<slug>/ page and inject its
+  // #panel-content, so index + standalone pages share one content source.
+  const overlay = document.getElementById("panel-overlay")!;
+  const panel = document.getElementById("panel")!;
+  const panelBody = document.getElementById("panel-body")!;
+  const panelClose = document.getElementById("panel-close")!;
+
+  async function openFont(slug: string, pushHistory = true) {
+    const res = await fetch(`/${slug}/`);
+    if (!res.ok) return;
+    const html = await res.text();
+    const doc = new DOMParser().parseFromString(html, "text/html");
+    const content = doc.getElementById("panel-content");
+    if (!content) return;
+    panelBody.innerHTML = content.outerHTML;
+    panel.hidden = false;
+    overlay.hidden = false;
+    requestAnimationFrame(() => {
+      panel.classList.add("is-open");
+      overlay.classList.add("is-open");
+    });
+    panel.setAttribute("aria-hidden", "false");
+    if (pushHistory) history.pushState({ slug }, "", `/${slug}/`);
+  }
+
+  function closePanel(pushHistory = true) {
+    panel.classList.remove("is-open");
+    overlay.classList.remove("is-open");
+    panel.setAttribute("aria-hidden", "true");
+    setTimeout(() => {
+      panel.hidden = true;
+      overlay.hidden = true;
+    }, 250);
+    if (pushHistory) history.pushState({}, "", "/");
+  }
+
+  grid.addEventListener("click", (e) => {
+    const card = (e.target as HTMLElement).closest<HTMLAnchorElement>("[data-card]");
+    if (!card) return;
+    e.preventDefault();
+    openFont(card.dataset.slug!);
+  });
+
+  panelBody.addEventListener("click", (e) => {
+    const closeLink = (e.target as HTMLElement).closest<HTMLElement>("[data-panel-close]");
+    if (!closeLink) return;
+    e.preventDefault();
+    closePanel();
+  });
+
+  overlay.addEventListener("click", () => closePanel());
+  panelClose.addEventListener("click", () => closePanel());
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
+  });
+  window.addEventListener("popstate", () => {
+    const slug = location.pathname.replace(/^\/|\/$/g, "");
+    if (slug) openFont(slug, false);
+    else closePanel(false);
+  });
+</script>

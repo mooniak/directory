@@ -1,0 +1,15 @@
+---
+import Base from "../layouts/Base.astro";
+import FontDetail from "../components/FontDetail.astro";
+import { getFonts } from "../lib/registry";
+
+export function getStaticPaths() {
+  return getFonts().map((font) => ({ params: { slug: font.slug }, props: { font } }));
+}
+
+const { font } = Astro.props;
+---
+
+<Base title={`${font.name} — mooniak`} description={font.description || `${font.name}, a mooniak typeface.`}>
+  <FontDetail font={font} />
+</Base>

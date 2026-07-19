@@ -1,0 +1,36 @@
+---
+import type { FontEntry } from "../lib/registry";
+
+interface Props {
+  font: FontEntry;
+  size?: "card" | "full";
+}
+
+const { font, size = "card" } = Astro.props;
+const famName = `wf-${font.id}`;
+const text = font.specimen_text ? Object.values(font.specimen_text).join("   ·   ") : font.name;
+const fontFaceCSS =
+  font.asset?.type === "webfont"
+    ? `@font-face{font-family:'${famName}';src:url('/data/${font.asset.path}');font-display:swap;}`
+    : "";
+---
+
+{fontFaceCSS && <Fragment set:html={`<style>${fontFaceCSS}</style>`} />}
+
+<div class={size === "full" ? "specimen-full" : "specimen"}>
+  {
+    font.asset?.type === "webfont" && (
+      <p class="specimen-text" style={`font-family:'${famName}', sans-serif;`} data-specimen={font.slug}>
+        {text}
+      </p>
+    )
+  }
+  {
+    font.asset?.type === "image" && (
+      <img class="specimen-image" src={`/data/${font.asset.path}`} alt={`${font.name} specimen`} loading="lazy" />
+    )
+  }
+  {
+    !font.asset && <p class="specimen-placeholder">No preview yet — {font.maturity} stage</p>
+  }
+</div>

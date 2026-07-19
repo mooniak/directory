@@ -1,0 +1,87 @@
+---
+import type { FontEntry } from "../lib/registry";
+import { MATURITY_LABEL, SCRIPT_LABEL } from "../lib/registry";
+import SpecimenPreview from "./SpecimenPreview.astro";
+
+interface Props {
+  font: FontEntry;
+}
+
+const { font } = Astro.props;
+const famName = `wf-${font.id}`;
+---
+
+<article id="panel-content" class="detail" data-slug={font.slug}>
+  <a class="detail-back" href="/" data-panel-close>← All fonts</a>
+  <header class="detail-header">
+    <h1>{font.name}</h1>
+    <div class="detail-badges">
+      <span class={`tag tag-maturity tag-${font.maturity}`}>{MATURITY_LABEL[font.maturity]}</span>
+      {font.scripts.map((s) => <span class="tag">{SCRIPT_LABEL[s] ?? s}</span>)}
+      {font.is_premium && <span class="tag">★ Licensed</span>}
+      {font.collection && <span class="tag">{font.collection}</span>}
+    </div>
+  </header>
+
+  <div class="specimen-full">
+    <SpecimenPreview font={font} size="full" />
+  </div>
+
+  {
+    font.asset?.type === "webfont" && (
+      <div class="try-yours">
+        <label for={`try-${font.slug}`}>Try your own text</label>
+        <input
+          id={`try-${font.slug}`}
+          type="text"
+          placeholder="Type here…"
+          style={`font-family:'${famName}', sans-serif;`}
+          data-try-input={font.slug}
+        />
+      </div>
+    )
+  }
+
+  {font.description && <p class="detail-desc">{font.description}</p>}
+
+  <dl class="detail-facts">
+    {
+      font.designers?.length > 0 && (
+        <>
+          <dt>Designer</dt>
+          <dd class="designers">
+            {font.designers.map((d) => (d.url ? <a href={d.url}>{d.name}</a> : <span>{d.name}</span>))}
+          </dd>
+        </>
+      )
+    }
+    <dt>Scripts</dt>
+    <dd>{font.scripts.map((s) => SCRIPT_LABEL[s] ?? s).join(", ")}</dd>
+    {font.license && (<><dt>License</dt><dd>{font.license}</dd></>)}
+    {font.maintenance && (<><dt>Status</dt><dd>{font.maintenance.replace(/-/g, " ")}</dd></>)}
+    {font.qa?.verdict && (
+      <>
+        <dt>QA</dt>
+        <dd>{font.qa.verdict}{typeof font.qa.pass_rate === "number" ? ` — ${font.qa.pass_rate}% pass rate` : ""}</dd>
+      </>
+    )}
+    {font.channels?.length > 0 && (<><dt>Channels</dt><dd>{font.channels.join(", ")}</dd></>)}
+  </dl>
+
+  {
+    font.is_premium ? (
+      <div class="cta cta-premium">
+        <p>This is a licensed mooniak font — the specimen above is a preview image, not a downloadable file.</p>
+        <a class="btn" href={`mailto:hello@mooniak.com?subject=${encodeURIComponent("Licensing: " + font.name)}`}>
+          Contact for licensing
+        </a>
+      </div>
+    ) : (
+      <div class="cta cta-free">
+        <p>Free and open — grab the latest build or read the source.</p>
+        <a class="btn" href={`https://github.com/mooniak/${font.slug}/releases`}>Latest release</a>
+        <a class="btn btn-secondary" href={`https://github.com/mooniak/${font.slug}`}>Source</a>
+      </div>
+    )
+  }
+</article>
