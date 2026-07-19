@@ -29,7 +29,13 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
     </div>
   </section>
 
-  <p class="result-count" id="result-count">{fonts.length} fonts</p>
+  <p class="result-count">
+    <span id="result-count">{fonts.length} fonts</span>
+    <span class="view-toggle" id="viewToggle">
+      <button class="chip is-active" data-view="grid" aria-label="Grid view">▦ Grid</button>
+      <button class="chip" data-view="list" aria-label="List view">☰ List</button>
+    </span>
+  </p>
 
   <section class="grid" id="grid">
     {fonts.map((font) => <FontCard font={font} />)}
@@ -144,4 +150,24 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
     if (slug) openFont(slug, false);
     else closePanel(false);
   });
+
+  // ── Grid / list view toggle, remembered across visits ──────────────
+  const VIEW_KEY = "mooniak-view";
+  const viewToggle = document.getElementById("viewToggle")!;
+
+  function setView(view: string) {
+    grid.classList.toggle("view-list", view === "list");
+    for (const btn of viewToggle.querySelectorAll<HTMLButtonElement>(".chip")) {
+      btn.classList.toggle("is-active", btn.dataset.view === view);
+    }
+    localStorage.setItem(VIEW_KEY, view);
+  }
+
+  viewToggle.addEventListener("click", (e) => {
+    const btn = (e.target as HTMLElement).closest<HTMLButtonElement>("[data-view]");
+    if (!btn) return;
+    setView(btn.dataset.view!);
+  });
+
+  setView(localStorage.getItem(VIEW_KEY) === "list" ? "list" : "grid");
 </script>

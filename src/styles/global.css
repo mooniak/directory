@@ -16,45 +16,7 @@
   --maturity-alpha: #8c8c8c;
   --maturity-beta: #4d4d4d;
   --maturity-stable: #111111;
-  color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #111111;
-    --bg-soft: #1c1c1c;
-    --fg: #f2f2f2;
-    --fg-muted: #a3a3a3;
-    --border: #333333;
-    --accent: var(--fg);
-    --accent-fg: var(--bg);
-    --card-bg: #1c1c1c;
-    --overlay: rgba(0, 0, 0, 0.6);
-  }
-}
-
-:root[data-theme="dark"] {
-  --bg: #111111;
-  --bg-soft: #1c1c1c;
-  --fg: #f2f2f2;
-  --fg-muted: #a3a3a3;
-  --border: #333333;
-  --accent: var(--fg);
-  --accent-fg: var(--bg);
-  --card-bg: #1c1c1c;
-  --overlay: rgba(0, 0, 0, 0.6);
-}
-
-:root[data-theme="light"] {
-  --bg: #ffffff;
-  --bg-soft: #f2f2f2;
-  --fg: #111111;
-  --fg-muted: #666666;
-  --border: #dddddd;
-  --accent: var(--fg);
-  --accent-fg: var(--bg);
-  --card-bg: #ffffff;
-  --overlay: rgba(0, 0, 0, 0.4);
+  color-scheme: light;
 }
 
 * { box-sizing: border-box; }
@@ -151,9 +113,17 @@ main {
 }
 
 .result-count {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: var(--fg-muted);
   font-size: 0.85rem;
   margin: 0 0 1rem;
+}
+
+.view-toggle {
+  display: flex;
+  gap: 0.35rem;
 }
 
 /* ── Grid + card ─────────────────────────────────────────────────── */
@@ -162,6 +132,12 @@ main {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
   gap: 1rem;
+}
+
+.grid.view-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
 }
 
 .card {
@@ -182,6 +158,30 @@ main {
 }
 
 .card.is-hidden { display: none; }
+
+.view-list .card {
+  flex-direction: row;
+  align-items: center;
+  gap: 1rem;
+  padding: 0.6rem 0.9rem;
+}
+
+.view-list .card-specimen {
+  flex: 1 1 auto;
+  height: 48px;
+  min-width: 0;
+}
+
+.view-list .card-meta {
+  flex: 0 0 auto;
+  width: 200px;
+}
+
+.view-list .card-tags {
+  flex: 0 0 auto;
+  width: 220px;
+  justify-content: flex-end;
+}
 
 .card-specimen {
   height: 84px;
@@ -413,4 +413,14 @@ main {
   main { padding: 1rem 1.1rem 3rem; }
   .site-header { padding: 1.1rem 1.1rem 0.8rem; }
   .panel { width: 100vw; padding: 1.4rem; }
+
+  .view-list .card {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .view-list .card-meta,
+  .view-list .card-tags {
+    width: auto;
+    justify-content: flex-start;
+  }
 }
