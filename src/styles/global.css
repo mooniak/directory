@@ -204,14 +204,20 @@ main {
 }
 
 .card-specimen .specimen-image {
-  /* height:100% (not max-height) makes height the authoritative dimension —
-     percentage max-height doesn't reliably resolve here since the parent is
-     a flex item whose own height comes from a sibling row in list view. */
-  height: 100%;
+  /* Explicit pixel height, not a percentage — percentage height/max-height
+     on an <img> doesn't reliably resolve against a flex-item ancestor here
+     (Chromium keeps sizing from the image's own aspect ratio instead), so
+     it rendered at full width with an uncapped height. A fixed px value
+     sidesteps the resolution question entirely; object-fit scales width. */
+  height: 64px;
   width: auto;
   max-width: 100%;
   object-fit: contain;
   filter: none;
+}
+
+.view-list .card-specimen .specimen-image {
+  height: 30px;
 }
 
 .card-specimen .specimen-placeholder {
