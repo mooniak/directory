@@ -204,8 +204,12 @@ main {
 }
 
 .card-specimen .specimen-image {
+  /* height:100% (not max-height) makes height the authoritative dimension —
+     percentage max-height doesn't reliably resolve here since the parent is
+     a flex item whose own height comes from a sibling row in list view. */
+  height: 100%;
+  width: auto;
   max-width: 100%;
-  max-height: 100%;
   object-fit: contain;
   filter: none;
 }
