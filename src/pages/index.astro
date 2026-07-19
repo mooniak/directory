@@ -82,13 +82,16 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
 
   // ── Slide-in panel: fetch the static /<slug>/ page and inject its
   // #panel-content, so index + standalone pages share one content source.
+  // BASE_URL is '/' at the domain root or '/directory/' at a subpath deploy —
+  // every hand-built URL below goes through it (see src/lib/url.ts).
+  const BASE = import.meta.env.BASE_URL;
   const overlay = document.getElementById("panel-overlay")!;
   const panel = document.getElementById("panel")!;
   const panelBody = document.getElementById("panel-body")!;
   const panelClose = document.getElementById("panel-close")!;
 
   async function openFont(slug: string, pushHistory = true) {
-    const res = await fetch(`/${slug}/`);
+    const res = await fetch(`${BASE}${slug}/`);
     if (!res.ok) return;
     const html = await res.text();
     const doc = new DOMParser().parseFromString(html, "text/html");
@@ -102,7 +105,7 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
       overlay.classList.add("is-open");
     });
     panel.setAttribute("aria-hidden", "false");
-    if (pushHistory) history.pushState({ slug }, "", `/${slug}/`);
+    if (pushHistory) history.pushState({ slug }, "", `${BASE}${slug}/`);
   }
 
   function closePanel(pushHistory = true) {
@@ -113,7 +116,7 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
       panel.hidden = true;
       overlay.hidden = true;
     }, 250);
-    if (pushHistory) history.pushState({}, "", "/");
+    if (pushHistory) history.pushState({}, "", BASE);
   }
 
   grid.addEventListener("click", (e) => {
@@ -136,7 +139,8 @@ const collections = [...new Set(fonts.map((f) => f.collection ?? "other"))].sort
     if (e.key === "Escape" && panel.classList.contains("is-open")) closePanel();
   });
   window.addEventListener("popstate", () => {
-    const slug = location.pathname.replace(/^\/|\/$/g, "");
+    const rest = location.pathname.startsWith(BASE) ? location.pathname.slice(BASE.length) : location.pathname;
+    const slug = rest.replace(/^\/|\/$/g, "");
     if (slug) openFont(slug, false);
     else closePanel(false);
   });

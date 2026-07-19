@@ -2,6 +2,7 @@
 import type { FontEntry } from "../lib/registry";
 import { MATURITY_LABEL, SCRIPT_LABEL } from "../lib/registry";
 import SpecimenPreview from "./SpecimenPreview.astro";
+import { withBase } from "../lib/url";
 
 interface Props {
   font: FontEntry;
@@ -12,7 +13,7 @@ const famName = `wf-${font.id}`;
 ---
 
 <article id="panel-content" class="detail" data-slug={font.slug}>
-  <a class="detail-back" href="/" data-panel-close>← All fonts</a>
+  <a class="detail-back" href={withBase("/")} data-panel-close>← All fonts</a>
   <header class="detail-header">
     <h1>{font.name}</h1>
     <div class="detail-badges">

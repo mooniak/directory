@@ -1,5 +1,6 @@
 ---
 import type { FontEntry } from "../lib/registry";
+import { withBase } from "../lib/url";
 
 interface Props {
   font: FontEntry;
@@ -11,7 +12,7 @@ const famName = `wf-${font.id}`;
 const text = font.specimen_text ? Object.values(font.specimen_text).join("   ·   ") : font.name;
 const fontFaceCSS =
   font.asset?.type === "webfont"
-    ? `@font-face{font-family:'${famName}';src:url('/data/${font.asset.path}');font-display:swap;}`
+    ? `@font-face{font-family:'${famName}';src:url('${withBase(`/data/${font.asset.path}`)}');font-display:swap;}`
     : "";
 ---
 
@@ -27,7 +28,7 @@ const fontFaceCSS =
   }
   {
     font.asset?.type === "image" && (
-      <img class="specimen-image" src={`/data/${font.asset.path}`} alt={`${font.name} specimen`} loading="lazy" />
+      <img class="specimen-image" src={withBase(`/data/${font.asset.path}`)} alt={`${font.name} specimen`} loading="lazy" />
     )
   }
   {

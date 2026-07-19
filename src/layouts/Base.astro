@@ -1,5 +1,6 @@
 ---
 import "../styles/global.css";
+import { withBase } from "../lib/url";
 
 interface Props {
   title: string;
@@ -16,11 +17,11 @@ const { title, description = "Sinhala, Tamil and Latin typefaces from mooniak �
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{title}</title>
     <meta name="description" content={description} />
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="icon" href={withBase("/favicon.svg")} type="image/svg+xml" />
   </head>
   <body>
     <header class="site-header">
-      <a class="site-title" href="/">mooniak</a>
+      <a class="site-title" href={withBase("/")}>mooniak</a>
       <p class="site-tagline">Sinhala · Tamil · Latin type — every font, every stage</p>
     </header>
     <main>
