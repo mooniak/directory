@@ -1,57 +1,60 @@
 :root {
   --bg: #ffffff;
-  --bg-soft: #f5f4f2;
-  --fg: #16140f;
-  --fg-muted: #6b6558;
-  --border: #e4e0d8;
-  --accent: #b5541e;
-  --accent-fg: #ffffff;
+  --bg-soft: #f2f2f2;
+  --fg: #111111;
+  --fg-muted: #666666;
+  --border: #dddddd;
+  --accent: var(--fg);
+  --accent-fg: var(--bg);
   --card-bg: #ffffff;
-  --overlay: rgba(20, 18, 12, 0.4);
+  --overlay: rgba(0, 0, 0, 0.4);
   --radius: 10px;
-  --maturity-sketch: #9a8f7a;
-  --maturity-alpha: #b5541e;
-  --maturity-beta: #3c6e59;
-  --maturity-stable: #1f5c9c;
+  /* Grayscale ramp, light → dark tracking sketch → stable (lower maturity
+     stays lighter; the darker the badge, the more finished the font). */
+  --maturity-sketch: #d9d9d9;
+  --maturity-sketch-fg: #1a1a1a;
+  --maturity-alpha: #8c8c8c;
+  --maturity-beta: #4d4d4d;
+  --maturity-stable: #111111;
   color-scheme: light dark;
 }
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --bg: #14130f;
-    --bg-soft: #1c1a15;
-    --fg: #f2efe8;
-    --fg-muted: #a89f8c;
-    --border: #34301f;
-    --accent: #e08a4f;
-    --accent-fg: #14130f;
-    --card-bg: #1c1a15;
+    --bg: #111111;
+    --bg-soft: #1c1c1c;
+    --fg: #f2f2f2;
+    --fg-muted: #a3a3a3;
+    --border: #333333;
+    --accent: var(--fg);
+    --accent-fg: var(--bg);
+    --card-bg: #1c1c1c;
     --overlay: rgba(0, 0, 0, 0.6);
   }
 }
 
 :root[data-theme="dark"] {
-  --bg: #14130f;
-  --bg-soft: #1c1a15;
-  --fg: #f2efe8;
-  --fg-muted: #a89f8c;
-  --border: #34301f;
-  --accent: #e08a4f;
-  --accent-fg: #14130f;
-  --card-bg: #1c1a15;
+  --bg: #111111;
+  --bg-soft: #1c1c1c;
+  --fg: #f2f2f2;
+  --fg-muted: #a3a3a3;
+  --border: #333333;
+  --accent: var(--fg);
+  --accent-fg: var(--bg);
+  --card-bg: #1c1c1c;
   --overlay: rgba(0, 0, 0, 0.6);
 }
 
 :root[data-theme="light"] {
   --bg: #ffffff;
-  --bg-soft: #f5f4f2;
-  --fg: #16140f;
-  --fg-muted: #6b6558;
-  --border: #e4e0d8;
-  --accent: #b5541e;
-  --accent-fg: #ffffff;
+  --bg-soft: #f2f2f2;
+  --fg: #111111;
+  --fg-muted: #666666;
+  --border: #dddddd;
+  --accent: var(--fg);
+  --accent-fg: var(--bg);
   --card-bg: #ffffff;
-  --overlay: rgba(20, 18, 12, 0.4);
+  --overlay: rgba(0, 0, 0, 0.4);
 }
 
 * { box-sizing: border-box; }
@@ -241,14 +244,15 @@ main {
 }
 
 .tag-maturity { color: #fff; border-color: transparent; }
-.tag-sketch { background: var(--maturity-sketch); }
+.tag-sketch { background: var(--maturity-sketch); color: var(--maturity-sketch-fg); }
 .tag-alpha { background: var(--maturity-alpha); }
 .tag-beta { background: var(--maturity-beta); }
 .tag-stable { background: var(--maturity-stable); }
 
 .badge-premium {
   font-size: 0.72rem;
-  color: var(--accent);
+  color: var(--fg);
+  font-weight: 700;
 }
 
 /* ── Slide-in panel ──────────────────────────────────────────────── */
