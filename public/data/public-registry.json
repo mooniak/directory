@@ -1,0 +1,2683 @@
+{
+  "schema": "mooniak-public-registry/v1",
+  "generated_note": "Regenerate with 'python -m mnik showcase'. Sanitized for public consumption: premium (private-repo) fonts carry a rasterized specimen image only, never the webfont binary. `maturity` is a derived proxy until Phase 4's declared field lands in fontpackage.json (see derive_maturity_proxy).",
+  "fonts": [
+    {
+      "id": "abhaya-classic",
+      "name": "Abhaya Classic",
+      "slug": "abhaya-classic-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Abhaya Classic, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/abhaya-classic-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රතු දැල්ලක්, තටුවක කඩතොළු දාරයේ කැලිසේයාවක් මැවීය.",
+        "en": "A red flair silhouetted the jagged edge of a wing."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/abhaya-classic.png"
+      }
+    },
+    {
+      "id": "abhaya-libre",
+      "name": "Abhaya Libre",
+      "slug": "abhaya-libre-font",
+      "scripts": [
+        "Sinh",
+        "Taml",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A high-contrast text typeface for Sinhala, Tamil and Latin, with extensive coverage for Sinhala, Pali and Sanskrit.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        },
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": ""
+        },
+        {
+          "name": "Sol Matas",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "beta",
+      "progress_overall": 76,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/abhaya-libre-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "https://fonts.google.com/specimen/Abhaya+Libre",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "අනතුරුව එළඹියේ කඩා වැටෙන පළමු තරුවේ රාත්‍රියයි.",
+        "ta": "இரவில், எரிநட்சத்திரம் விழுவது போல் அவை வந்தன.",
+        "en": "Then came the night of the first falling star."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/abhaya-libre.woff2"
+      }
+    },
+    {
+      "id": "abhaya-libre-sans",
+      "name": "Abhaya Libre Sans",
+      "slug": "abhaya-libre-sans-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "The sans-serif companion to Abhaya Libre, designed for Sinhala and Latin scripts.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "sketch",
+      "progress_overall": 21,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 77
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/abhaya-libre-sans-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රතු දැල්ලක්, තටුවක කඩතොළු දාරයේ කැලිසේයාවක් මැවීය.",
+        "en": "A red flair silhouetted the jagged edge of a wing."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/abhaya-libre-sans.png"
+      }
+    },
+    {
+      "id": "aggnni",
+      "name": "Aggnni",
+      "slug": "aggnni-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Aggnni, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/aggnni-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "පටිගත කළ කටහඬ දොරට ඉහළින් වූ ස්පීකරයෙන් නිකුත් විය.",
+        "en": "The recorded voice scratched in the speaker over the door."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/aggnni.png"
+      }
+    },
+    {
+      "id": "alakamanda",
+      "name": "Alakamanda",
+      "slug": "alakamanda-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Alakamanda, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/alakamanda-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "දැල්ල නිවී ගියේය, ඔහු කවුළුව තුළින් වලාකුළු දෙස බලා සිටියේය.",
+        "en": "The flame died, and he stared through the window at the stars."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/alakamanda.png"
+      }
+    },
+    {
+      "id": "aluvihare",
+      "name": "Aluvihare",
+      "slug": "aluvihare-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Aluvihare, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 72
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/aluvihare-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "නීල වර්ණ සන්ධ්‍යාවේ තරංග කැළඹීණි.",
+        "en": "Waves flung themselves at the blue evening."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/aluvihare.png"
+      }
+    },
+    {
+      "id": "amawathura",
+      "name": "Amawathura",
+      "slug": "amawathura-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Amawathura, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/amawathura-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රතු දැල්ලක්, තටුවක කඩතොළු දාරයේ කැලිසේයාවක් මැවීය.",
+        "en": "A red flair silhouetted the jagged edge of a wing."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/amawathura.png"
+      }
+    },
+    {
+      "id": "arjunn",
+      "name": "Arjunn",
+      "slug": "arjunn-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Arjunn, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/arjunn-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අප එය දැන ගැනීමටත් පෙර, අප බිම හැර ගොස් තිබිණි.",
+        "en": "Almost before we knew it, we had left the ground."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/arjunn.png"
+      }
+    },
+    {
+      "id": "arundathi",
+      "name": "Arundathi",
+      "slug": "arundathi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Arundathi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/arundathi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අනතුරුව එළඹියේ කඩා වැටෙන පළමු තරුවේ රාත්‍රියයි.",
+        "en": "Then came the night of the first falling star."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/arundathi.png"
+      }
+    },
+    {
+      "id": "awaragira",
+      "name": "Awaragira",
+      "slug": "awaragira-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A default Sinhala font for GNU/Linux systems, designed to replace LKLUG as the system default UI typeface.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "beta",
+      "progress_overall": 68,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 72
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/awaragira-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "පටිගත කළ කටහඬ දොරට ඉහළින් වූ ස්පීකරයෙන් නිකුත් විය."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/awaragira.woff2"
+      }
+    },
+    {
+      "id": "basuru",
+      "name": "Basuru",
+      "slug": "basuru-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Basuru, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/basuru-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "පටිගත කළ කටහඬ දොරට ඉහළින් වූ ස්පීකරයෙන් නිකුත් විය.",
+        "en": "The recorded voice scratched in the speaker over the door."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/basuru.png"
+      }
+    },
+    {
+      "id": "bindumathee",
+      "name": "Bindumathee",
+      "slug": "bindumathee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Bindumathee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/bindumathee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "වලාකුළින් තොර අහස තද නිල් පැහැයක් ගත්තේය.",
+        "en": "The sky was cloudless and of a deep dark blue."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/bindumathee.png"
+      }
+    },
+    {
+      "id": "davasa",
+      "name": "Davasa",
+      "slug": "davasa-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": false,
+      "description": "A Sinhala text typeface in development under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 35,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/davasa-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අප එය දැන ගැනීමටත් පෙර, අප බිම හැර ගොස් තිබිණි."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/davasa.png"
+      }
+    },
+    {
+      "id": "dedigama",
+      "name": "Dedigama",
+      "slug": "dedigama-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A revival of the Sinhala typeface used by the Progress Publishers (Pragathi Publications).",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Damith Welikala",
+          "email": "kadira86@gmail.com",
+          "url": ""
+        },
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "beta",
+      "progress_overall": 60,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 65
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/dedigama-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රතු දැල්ලක්, තටුවක කඩතොළු දාරයේ කැලිසේයාවක් මැවීය."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/dedigama.png"
+      }
+    },
+    {
+      "id": "derana",
+      "name": "Derana",
+      "slug": "derana-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Derana, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/derana-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "එය හුදකලා ආපසු ගමනක් වන්නට ගියේය.",
+        "en": "It was going to be a lonely trip back."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/derana.png"
+      }
+    },
+    {
+      "id": "dharanee",
+      "name": "Dharanee",
+      "slug": "dharanee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Dharanee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/dharanee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "දැල්ල නිවී ගියේය, ඔහු කවුළුව තුළින් වලාකුළු දෙස බලා සිටියේය.",
+        "en": "The flame died, and he stared through the window at the stars."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/dharanee.png"
+      }
+    },
+    {
+      "id": "dinamina",
+      "name": "Dinamina",
+      "slug": "dinamina-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Dinamina, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 73
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/dinamina-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/dinamina.png"
+      }
+    },
+    {
+      "id": "disapamok",
+      "name": "Disapamok",
+      "slug": "disapamok-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Disapamok, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/disapamok-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/disapamok.png"
+      }
+    },
+    {
+      "id": "drona",
+      "name": "Drona",
+      "slug": "drona-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Sinhala and Latin typeface in development under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 26,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 65
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/drona-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "මගේ ස්වභාව දෙකටම පොදු මතකයක් විය."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/drona.png"
+      }
+    },
+    {
+      "id": "gagan",
+      "name": "Gagan",
+      "slug": "gagan-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Gagan, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/gagan-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අනතුරුව එළඹියේ කඩා වැටෙන පළමු තරුවේ රාත්‍රියයි.",
+        "en": "Then came the night of the first falling star."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/gagan.png"
+      }
+    },
+    {
+      "id": "galle",
+      "name": "Galle",
+      "slug": "galle-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A font based on the typefaces used by the Dutch Press in Ceylon.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Janaka CB Attanayake",
+          "email": "janaka@akuru.xyz",
+          "url": ""
+        },
+        {
+          "name": "Rajitha Manamperi",
+          "email": "rajitha@mooniak.com",
+          "url": ""
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "sketch",
+      "progress_overall": 0,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 65
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/galle-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "මගේ ස්වභාව දෙකටම පොදු මතකයක් විය.",
+        "en": "My two natures had memory in common."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/galle.woff2"
+      }
+    },
+    {
+      "id": "gandhara",
+      "name": "Gandhara",
+      "slug": "gandhara-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Gandhara, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/gandhara-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "නැව්තොටින් නික්ම පැය තුනක් ගිය කළ යාත්‍රාව මීදුමින් වෙළිණි.",
+        "en": "Mist enveloped the ship three hours out from port."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/gandhara.png"
+      }
+    },
+    {
+      "id": "gemunu-libre",
+      "name": "Gemunu Libre",
+      "slug": "gemunu-libre-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Unicode-compliant revival of the popular FM Gemunu typeface, with a squarish, smooth design available in seven weights from Extra Light to Extra Bold.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpanada Ekanayake",
+          "email": "pushpanandae@gmail.com",
+          "url": "https://isiwara.lk/"
+        },
+        {
+          "name": "Sol Matas",
+          "email": "solmatas@gmail.com",
+          "url": "https://www.solmatas.com/"
+        },
+        {
+          "name": "Kosala Senevirathne",
+          "email": "",
+          "url": ""
+        },
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        },
+        {
+          "name": "Ayantha Randika",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "beta",
+      "progress_overall": 89,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 78
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/gemunu-libre-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "https://fonts.google.com/specimen/Gemunu+Libre",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "පටිගත කළ කටහඬ දොරට ඉහළින් වූ ස්පීකරයෙන් නිකුත් විය.",
+        "en": "The recorded voice scratched in the speaker over the door."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/gemunu-libre.woff2"
+      }
+    },
+    {
+      "id": "gurulugomi",
+      "name": "Gurulugomi",
+      "slug": "gurulugomi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Gurulugomi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/gurulugomi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අප එය දැන ගැනීමටත් පෙර, අප බිම හැර ගොස් තිබිණි.",
+        "en": "Almost before we knew it, we had left the ground."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/gurulugomi.png"
+      }
+    },
+    {
+      "id": "hopalu",
+      "name": "Hopalu",
+      "slug": "hopalu-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Hopalu, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/hopalu-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "එය හුදකලා ආපසු ගමනක් වන්නට ගියේය.",
+        "en": "It was going to be a lonely trip back."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/hopalu.png"
+      }
+    },
+    {
+      "id": "imanee",
+      "name": "Imanee",
+      "slug": "imanee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Imanee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/imanee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/imanee.png"
+      }
+    },
+    {
+      "id": "indeevari",
+      "name": "Indeevari",
+      "slug": "indeevari-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Indeevari, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/indeevari-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "ඇදී යන යාත්‍රාවට ඉතා පහළින් පොළොව දීපිත්මත් අර්ධකවාකාර මතුපිටක් ලෙස දිස් විය.",
+        "en": "Earth was a brilliantly shining crescent far beneath the flying vessel."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/indeevari.png"
+      }
+    },
+    {
+      "id": "isiwara",
+      "name": "Isiwara",
+      "slug": "isiwara-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Isiwara, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/isiwara-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රතු දැල්ලක්, තටුවක කඩතොළු දාරයේ කැලිසේයාවක් මැවීය.",
+        "en": "A red flair silhouetted the jagged edge of a wing."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/isiwara.png"
+      }
+    },
+    {
+      "id": "kaputa",
+      "name": "Kaputa",
+      "slug": "kaputa-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A revival of one of the most widely used Sinhala Unicode fonts, revived from legacy ASCII encoding and updated to comply with current standards.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Niranjan Meegammana",
+          "email": "",
+          "url": ""
+        },
+        {
+          "name": "Thusitha Randunge",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "passively-maintained",
+      "maturity": "beta",
+      "progress_overall": 68,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 73
+      },
+      "channels": [
+        "release",
+        "dev",
+        "nightly"
+      ],
+      "homepage_url": "https://src.mooniak.com/kaputa-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "නීල වර්ණ සන්ධ්‍යාවේ තරංග කැළඹීණි."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/kaputa.woff2"
+      }
+    },
+    {
+      "id": "kasup",
+      "name": "Kasup",
+      "slug": "kasup-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Kasup, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/kasup-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/kasup.png"
+      }
+    },
+    {
+      "id": "kethumathi",
+      "name": "Kethumathi",
+      "slug": "kethumathi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Kethumathi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/kethumathi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "ඔවුන්ගේ සියලු උපකරණ හා මෙවලම් කෙසේ හෝ යහතින් විය.",
+        "en": "All their equipment and instruments are alive, in some form or other."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/kethumathi.png"
+      }
+    },
+    {
+      "id": "kolonbiya",
+      "name": "Kolonbiya",
+      "slug": "kolonbiya-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Sinhala typeface in development under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "sketch",
+      "progress_overall": 0,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 74
+      },
+      "channels": [
+        "release",
+        "dev",
+        "nightly"
+      ],
+      "homepage_url": "https://src.mooniak.com/kolonbiya-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/kolonbiya.woff2"
+      }
+    },
+    {
+      "id": "lankasymbols",
+      "name": "LankaSymbols",
+      "slug": "lankasymbols-font",
+      "scripts": [
+        "Symbols"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A free and open source symbolic font for Sri Lankan cultural and official symbols, maintained by Mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 54,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 67
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/lankasymbols-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "en": "Earth was a brilliantly shining crescent far beneath the flying vessel."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/lankasymbols.png"
+      }
+    },
+    {
+      "id": "lankaverse-sans",
+      "name": "Lankaverse Sans",
+      "slug": "lankaverse-sans-font",
+      "scripts": [
+        "Sinh",
+        "Latn",
+        "Taml"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Trilingula font for the fututre of Sri Lanka. Lankaverse Sans is a sans-serif typeface designed to support the Sinhala script, with a focus on readability and versatility. It is suitable for a wide range of applications, including body text, headlines, and user interfaces.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "passively-maintained",
+      "maturity": "beta",
+      "progress_overall": 68,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 49
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/lankaverse-sans-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "බෙහෙවින් අලංකාර නමුත් බිහිසුණු වූ කුණාටුව දෙස, මම බලා සිටියෙමි.",
+        "en": "I watched the storm, so beautiful yet terrific.",
+        "ta": "புயலைப் பார்த்தேன், மிக அழகாகவும் ஆக்ரோஷமாகவும் இருந்தது."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/lankaverse-sans.woff2"
+      }
+    },
+    {
+      "id": "malithi",
+      "name": "Malithi",
+      "slug": "malithi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Malithi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/malithi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අප එය දැන ගැනීමටත් පෙර, අප බිම හැර ගොස් තිබිණි.",
+        "en": "Almost before we knew it, we had left the ground."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/malithi.png"
+      }
+    },
+    {
+      "id": "maname",
+      "name": "Maname",
+      "slug": "maname-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Sinhala serif typeface by the Mooniak foundry, first published in 2019.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "sketch",
+      "progress_overall": 0,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 78
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/maname-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/maname.woff2"
+      }
+    },
+    {
+      "id": "mandakini",
+      "name": "Mandakini",
+      "slug": "mandakini-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Mandakini, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/mandakini-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අප ඉදිරියේ ඇති දර්ශනය සැබවින්ම උත්කෘෂ්ට විය.",
+        "en": "The spectacle before us was indeed sublime."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/mandakini.png"
+      }
+    },
+    {
+      "id": "moonface",
+      "name": "Moonface",
+      "slug": "moonface-font",
+      "scripts": [
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Latin display typeface designed under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "sketch",
+      "progress_overall": 19,
+      "qa": {
+        "verdict": null,
+        "pass_rate": null
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/moonface-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "en": "Then came the night of the first falling star."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/moonface.woff2"
+      }
+    },
+    {
+      "id": "nadee",
+      "name": "Nadee",
+      "slug": "nadee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Nadee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/nadee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "දැල්ල නිවී ගියේය, ඔහු කවුළුව තුළින් වලාකුළු දෙස බලා සිටියේය.",
+        "en": "The flame died, and he stared through the window at the stars."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/nadee.png"
+      }
+    },
+    {
+      "id": "noto-sans-sinhala",
+      "name": "Noto Sinhala",
+      "slug": "noto-sans-sinhala",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "Mooniak's work on the Noto Sans Sinhala and Noto Serif Sinhala typefaces, built and QA-tested with FontBakery.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "sketch",
+      "progress_overall": 0,
+      "qa": {
+        "verdict": null,
+        "pass_rate": null
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/noto-sans-sinhala/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "නැව්තොටින් නික්ම පැය තුනක් ගිය කළ යාත්‍රාව මීදුමින් වෙළිණි.",
+        "en": "Mist enveloped the ship three hours out from port."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/noto-sans-sinhala.otf"
+      }
+    },
+    {
+      "id": "pabavathee",
+      "name": "Pabavathee",
+      "slug": "pabavathee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Pabavathee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/pabavathee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "ඇදී යන යාත්‍රාවට ඉතා පහළින් පොළොව දීපිත්මත් අර්ධකවාකාර මතුපිටක් ලෙස දිස් විය.",
+        "en": "Earth was a brilliantly shining crescent far beneath the flying vessel."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/pabavathee.png"
+      }
+    },
+    {
+      "id": "rajantha",
+      "name": "Rajantha",
+      "slug": "rajantha-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Rajantha, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 77
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/rajantha-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "නීල වර්ණ සන්ධ්‍යාවේ තරංග කැළඹීණි.",
+        "en": "Waves flung themselves at the blue evening."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/rajantha.png"
+      }
+    },
+    {
+      "id": "ralex",
+      "name": "Ralex",
+      "slug": "ralex-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Sinhala and Latin typeface in development under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 26,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 57
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/ralex-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "අනතුරුව එළඹියේ කඩා වැටෙන පළමු තරුවේ රාත්‍රියයි."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/ralex.png"
+      }
+    },
+    {
+      "id": "ramya",
+      "name": "Ramya",
+      "slug": "ramya-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Ramya, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/ramya-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "පටිගත කළ කටහඬ දොරට ඉහළින් වූ ස්පීකරයෙන් නිකුත් විය.",
+        "en": "The recorded voice scratched in the speaker over the door."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/ramya.png"
+      }
+    },
+    {
+      "id": "rashmi",
+      "name": "Rashmi",
+      "slug": "rashmi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Rashmi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/rashmi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "දැල්ල නිවී ගියේය, ඔහු කවුළුව තුළින් වලාකුළු දෙස බලා සිටියේය.",
+        "en": "The flame died, and he stared through the window at the stars."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/rashmi.png"
+      }
+    },
+    {
+      "id": "sakunthala",
+      "name": "Sakunthala",
+      "slug": "sakunthala-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Sakunthala, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/sakunthala-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "වලාකුළින් තොර අහස තද නිල් පැහැයක් ගත්තේය.",
+        "en": "The sky was cloudless and of a deep dark blue."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/sakunthala.png"
+      }
+    },
+    {
+      "id": "samantha",
+      "name": "Samantha",
+      "slug": "samantha-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Samantha, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/samantha-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "බෙහෙවින් අලංකාර නමුත් බිහිසුණු වූ කුණාටුව දෙස, මම බලා සිටියෙමි.",
+        "en": "I watched the storm, so beautiful yet terrific."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/samantha.png"
+      }
+    },
+    {
+      "id": "sandhyanee",
+      "name": "Sandhyanee",
+      "slug": "sandhyanee-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Sandhyanee, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/sandhyanee-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "ඇදී යන යාත්‍රාවට ඉතා පහළින් පොළොව දීපිත්මත් අර්ධකවාකාර මතුපිටක් ලෙස දිස් විය.",
+        "en": "Earth was a brilliantly shining crescent far beneath the flying vessel."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/sandhyanee.png"
+      }
+    },
+    {
+      "id": "sarani",
+      "name": "Sarani",
+      "slug": "sarani-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Sarani, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 75
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/sarani-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/sarani.png"
+      }
+    },
+    {
+      "id": "singithi",
+      "name": "Singithi",
+      "slug": "singithi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": "fontmaster",
+      "listed": true,
+      "description": "Singithi, a Sinhala typeface from the FontMaster legacy collection, revived by mooniak.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pushpananda Ekanayake",
+          "email": "",
+          "url": "https://isiwara.lk/"
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "alpha",
+      "progress_overall": 56,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 76
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/singithi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "රිදී පැහැ මීදුම යාත්‍රාවේ තට්ටුව හාත්පස පැතිරිණි.",
+        "en": "Silver mist suffused the deck of the ship."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/singithi.png"
+      }
+    },
+    {
+      "id": "sinhala-comic",
+      "name": "Sinhala Comic Fonts",
+      "slug": "sinhala-comic-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A set of display fonts designed specifically for Sinhala comics and graphic storytelling.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "passively-maintained",
+      "maturity": "alpha",
+      "progress_overall": 51,
+      "qa": {
+        "verdict": null,
+        "pass_rate": null
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/sinhala-comic-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "දැල්ල නිවී ගියේය, ඔහු කවුළුව තුළින් වලාකුළු දෙස බලා සිටියේය."
+      },
+      "asset": null
+    },
+    {
+      "id": "stick-no-bills",
+      "name": "Stick No Bills",
+      "slug": "stick-no-bills-font",
+      "scripts": [
+        "Sinh"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Sinhala stencil display typeface inspired by hand-painted 'stick no bills' wall lettering, by the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Kosala Senevirathne",
+          "email": "kosalaa@mooniak.com",
+          "url": ""
+        },
+        {
+          "name": "Siva Puranthara",
+          "email": "",
+          "url": ""
+        },
+        {
+          "name": "Tharique Azeez",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "passively-maintained",
+      "maturity": "beta",
+      "progress_overall": 66,
+      "qa": {
+        "verdict": null,
+        "pass_rate": null
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/stick-no-bills-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "මගේ ස්වභාව දෙකටම පොදු මතකයක් විය."
+      },
+      "asset": null
+    },
+    {
+      "id": "varusi",
+      "name": "Varusi",
+      "slug": "varusi-font",
+      "scripts": [
+        "Sinh",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": false,
+      "description": "A condensed display typeface for Sinhala and Latin scripts in development under the Mooniak foundry.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 26,
+      "qa": {
+        "verdict": null,
+        "pass_rate": 85
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/varusi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "si": "ඇදී යන යාත්‍රාවට ඉතා පහළින් පොළොව දීපිත්මත් අර්ධකවාකාර මතුපිටක් ලෙස දිස් විය.",
+        "en": "Earth was a brilliantly shining crescent far beneath the flying vessel."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/varusi.png"
+      }
+    },
+    {
+      "id": "vineetha",
+      "name": "Vineetha",
+      "slug": "vineetha-font",
+      "scripts": [
+        "Taml"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A Tamil text typeface exploring multiple styles and variable font technology for Tamil script.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 36,
+      "qa": {
+        "verdict": null,
+        "pass_rate": null
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/vineetha-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "ta": "துறைமுகத்திலிருந்து வெளியே வந்த மூன்று மணிநேரத்தில் கப்பலைச் சுற்றி பனிபடர்ந்தது."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/vineetha.png"
+      }
+    },
+    {
+      "id": "yakkala",
+      "name": "Yakkala",
+      "slug": "yakkala-font",
+      "scripts": [
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "An experimental typeface for the permaweb inspired by a Presidential Pica No 70 typewriter sample from the 1964 NOMDA Blue Book.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        }
+      ],
+      "maintenance": "experimental",
+      "maturity": "alpha",
+      "progress_overall": 35,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 66
+      },
+      "channels": [
+        "canary",
+        "dev"
+      ],
+      "homepage_url": "https://src.mooniak.com/yakkala-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": true,
+      "specimen_text": {
+        "en": "The flame died, and he stared through the window at the stars."
+      },
+      "asset": {
+        "type": "image",
+        "path": "specimens/yakkala.png"
+      }
+    },
+    {
+      "id": "yaldevi",
+      "name": "Yaldevi",
+      "slug": "yaldevi-font",
+      "scripts": [
+        "Sinh",
+        "Taml",
+        "Latn"
+      ],
+      "collection": null,
+      "listed": true,
+      "description": "A narrow trilingual typeface for titles and short text on the web, with Sinhala, Tamil and Latin support.",
+      "license": "OFL-1.1",
+      "designers": [
+        {
+          "name": "Pathum Egodawatta",
+          "email": "pathum@mooniak.com",
+          "url": "https://pathumego.com/"
+        },
+        {
+          "name": "Sol Matas",
+          "email": "",
+          "url": ""
+        }
+      ],
+      "maintenance": "actively-developed",
+      "maturity": "beta",
+      "progress_overall": 60,
+      "qa": {
+        "verdict": "fail",
+        "pass_rate": 74
+      },
+      "channels": [
+        "canary",
+        "dev",
+        "release"
+      ],
+      "homepage_url": "https://src.mooniak.com/yaldevi-font/",
+      "links": {
+        "font_in_use": "",
+        "googlefonts": "https://fonts.google.com/specimen/Yaldevi",
+        "fontlibrary_org": "",
+        "typekit": ""
+      },
+      "is_premium": false,
+      "specimen_text": {
+        "si": "අනතුරුව එළඹියේ කඩා වැටෙන පළමු තරුවේ රාත්‍රියයි.",
+        "ta": "இரவில், எரிநட்சத்திரம் விழுவது போல் அவை வந்தன.",
+        "en": "Then came the night of the first falling star."
+      },
+      "asset": {
+        "type": "webfont",
+        "path": "fonts/yaldevi.woff2"
+      }
+    }
+  ]
+}
